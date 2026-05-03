@@ -1,434 +1,106 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>退職時の連絡方法｜対面が難しいケースの対応</title>
-  <meta
-    name="description"
-    content="退職時の連絡方法について、対面が難しい場合の対応や注意点をわかりやすく解説します。メール・電話・書面・郵送など、状況に応じた現実的な進め方を紹介。"
-  />
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.8;
-      color: #1f2937;
-      background: #f7f8fc;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    .page {
-      max-width: 1040px;
-      margin: 0 auto;
-      padding: 24px 16px 48px;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 28px;
-      align-items: center;
-      padding: 32px;
-      border-radius: 28px;
-      background: linear-gradient(135deg, #fff7ed, #eef2ff);
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: #ffffff;
-      color: #ea580c;
-      font-weight: 700;
-      font-size: 14px;
-      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
-    }
-
-    h1 {
-      margin: 18px 0 14px;
-      font-size: clamp(30px, 5vw, 48px);
-      line-height: 1.22;
-      letter-spacing: -0.04em;
-      color: #111827;
-    }
-
-    .lead {
-      margin: 0 0 22px;
-      font-size: 17px;
-      color: #374151;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 22px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      padding: 12px 18px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 800;
-      border: 2px solid transparent;
-    }
-
-    .button-primary {
-      background: #f97316;
-      color: #fff;
-      box-shadow: 0 10px 22px rgba(249, 115, 22, 0.25);
-    }
-
-    .button-secondary {
-      background: #fff;
-      color: #334155;
-      border-color: #e5e7eb;
-    }
-
-    .hero-image {
-      width: 100%;
-      border-radius: 24px;
-      background: #fff;
-      padding: 12px;
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.10);
-    }
-
-    .hero-image img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 18px;
-    }
-
-    .summary {
-      margin: 24px 0;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-    }
-
-    .summary-card,
-    .card {
-      background: #fff;
-      border: 1px solid #e5e7eb;
-      border-radius: 22px;
-      padding: 20px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
-    }
-
-    .summary-card strong {
-      display: block;
-      margin-bottom: 8px;
-      font-size: 18px;
-      color: #111827;
-    }
-
-    .section {
-      margin-top: 28px;
-    }
-
-    .section-title {
-      margin: 0 0 16px;
-      font-size: clamp(24px, 4vw, 34px);
-      line-height: 1.35;
-      color: #111827;
-    }
-
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
-    .step-icon {
-      width: 56px;
-      height: 56px;
-      display: grid;
-      place-items: center;
-      border-radius: 18px;
-      background: #fff7ed;
-      font-size: 30px;
-      margin-bottom: 12px;
-    }
-
-    .card h3 {
-      margin: 0 0 8px;
-      font-size: 21px;
-      color: #111827;
-    }
-
-    .card p {
-      margin: 0;
-      color: #4b5563;
-    }
-
-    .notice {
-      display: grid;
-      grid-template-columns: 72px 1fr;
-      gap: 16px;
-      align-items: start;
-      margin-top: 28px;
-      padding: 22px;
-      border-radius: 24px;
-      background: #fffbeb;
-      border: 1px solid #fde68a;
-    }
-
-    .notice-icon {
-      width: 64px;
-      height: 64px;
-      display: grid;
-      place-items: center;
-      border-radius: 20px;
-      background: #fff;
-      font-size: 34px;
-    }
-
-    .notice h2 {
-      margin: 0 0 8px;
-      color: #92400e;
-      font-size: 24px;
-    }
-
-    .notice ul {
-      margin: 8px 0 0;
-      padding-left: 20px;
-    }
-
-    .split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      margin-top: 18px;
-    }
-
-    .mini-list {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .cta {
-      margin-top: 34px;
-      padding: 28px;
-      border-radius: 28px;
-      background: #111827;
-      color: #fff;
-      text-align: center;
-    }
-
-    .cta h2 {
-      margin: 0 0 10px;
-      font-size: clamp(24px, 4vw, 34px);
-    }
-
-    .cta p {
-      margin: 0 auto 20px;
-      max-width: 680px;
-      color: #d1d5db;
-    }
-
-    .cta .button-primary {
-      background: #fff;
-      color: #111827;
-      box-shadow: none;
-    }
-
-    .footer-note {
-      margin-top: 22px;
-      font-size: 13px;
-      color: #6b7280;
-      text-align: center;
-    }
-
-    @media (max-width: 760px) {
-      .page {
-        padding: 14px 12px 36px;
-      }
-
-      .hero {
-        grid-template-columns: 1fr;
-        padding: 22px;
-        border-radius: 22px;
-      }
-
-      .hero-image {
-        order: -1;
-      }
-
-      .summary,
-      .steps,
-      .split {
-        grid-template-columns: 1fr;
-      }
-
-      .summary-card,
-      .card {
-        padding: 18px;
-      }
-
-      .notice {
-        grid-template-columns: 1fr;
-      }
-
-      .button {
-        width: 100%;
-      }
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>退職時の連絡方法｜対面が難しいケースの対応</title>
+<meta name="description" content="退職の意思表示は書面で残すのが基本。対面が難しい場合の現実的な進め方と注意点を解説します。" />
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.8;color:#1f2937;background:#f7f8fc}
+.page{max-width:1040px;margin:0 auto;padding:24px 16px 48px}
+.hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:28px;align-items:center;padding:32px;border-radius:24px;background:linear-gradient(135deg,#fff7ed,#eef2ff);box-shadow:0 18px 45px rgba(15,23,42,.08)}
+h1{margin:0 0 12px;font-size:clamp(28px,5vw,44px);line-height:1.25;color:#111827}
+.lead{margin:0 0 18px;color:#374151}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:800}
+.button-primary{background:#f97316;color:#fff}
+.hero-image{background:#fff;border-radius:18px;padding:10px;box-shadow:0 12px 30px rgba(15,23,42,.1)}
+.hero-image img{width:100%;border-radius:14px}
+.summary{margin:22px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:18px}
+.section{margin-top:28px}
+.section-title{margin:0 0 14px;font-size:clamp(22px,4vw,30px);color:#111827}
+.notice{margin-top:24px;padding:18px;border-radius:18px;background:#fffbeb;border:1px solid #fde68a}
+.cta{margin-top:32px;padding:24px;border-radius:22px;background:#111827;color:#fff;text-align:center}
+.cta a{background:#fff;color:#111;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:800;display:inline-block;margin-top:14px}
+@media(max-width:760px){
+ .hero{grid-template-columns:1fr;padding:20px}
+ .summary{grid-template-columns:1fr}
+}
+</style>
 </head>
 <body>
-  <main class="page">
-    <section class="hero">
-      <div>
-        <span class="badge">退職時の連絡ガイド</span>
-        <h1>対面で言い出しにくい退職連絡、どう進める？</h1>
-        <p class="lead">
-          退職の連絡は、まず「意思をはっきり伝えること」が大切です。
-          対面が難しい場合でも、メール・電話・書面など、状況に応じた方法があります。
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="/">退職届をそのまま作成する</a>
-          <a class="button button-secondary" href="#methods">連絡方法を見る</a>
-        </div>
-      </div>
+<main class="page">
 
-      <div class="hero-image">
-        <img
-          src="taishoku-guide-main.png"
-          alt="退職時の連絡方法を相談しているイメージ"
-          width="800"
-        />
-      </div>
-    </section>
+<section class="hero">
+<div>
+<h1>退職は「書面で残す」が基本</h1>
+<p class="lead">
+退職の意思表示は、後から証明できる形で行うのが安全です。  
+対面が難しい場合でも、最終的には書面（退職届）の提出を前提に進めます。
+</p>
+<a class="button button-primary" href="/">退職届を作成する</a>
+</div>
 
-    <section class="summary" aria-label="このページの結論">
-      <div class="summary-card">
-        <strong>① 基本は対面</strong>
-        <p>可能であれば、上司へ直接伝えるのが一般的です。</p>
-      </div>
-      <div class="summary-card">
-        <strong>② 難しい場合は別手段</strong>
-        <p>体調や職場環境によっては、メールや電話も選択肢です。</p>
-      </div>
-      <div class="summary-card">
-        <strong>③ 記録を残す</strong>
-        <p>トラブル防止には、書面や郵送など記録が残る方法が有効です。</p>
-      </div>
-    </section>
+<div class="hero-image">
+<img src="taishoku-guide-main.png" alt="退職届イメージ">
+</div>
+</section>
 
-    <section class="section" id="methods">
-      <h2 class="section-title">連絡方法は、状況に合わせて選ぶ</h2>
+<section class="summary">
+<div class="card">
+<strong>① 基本は書面</strong>
+<p>退職届を提出するのが最も確実です。</p>
+</div>
+<div class="card">
+<strong>② 対面は補助</strong>
+<p>対面は説明の場であり、記録にはなりません。</p>
+</div>
+<div class="card">
+<strong>③ 記録を残す</strong>
+<p>郵送など証拠が残る方法を優先します。</p>
+</div>
+</section>
 
-      <div class="steps">
-        <article class="card">
-          <div class="step-icon">👔</div>
-          <h3>対面で伝える</h3>
-          <p>
-            一般的には、上司へ直接伝える方法が基本です。
-            就業規則に申出期限がある場合は、事前に確認しておくと安心です。
-          </p>
-        </article>
+<section class="section">
+<h2 class="section-title">推奨される進め方</h2>
 
-        <article class="card">
-          <div class="step-icon">📧</div>
-          <h3>メールで伝える</h3>
-          <p>
-            体調不良や出社が難しい事情がある場合、まずメールで退職の意思を伝える方法もあります。
-            感情的な表現は避け、簡潔に書きます。
-          </p>
-        </article>
+<div class="card">
+<strong>① 可能なら対面で意思を伝える</strong>
+<p>まず口頭で意思を伝えること自体は問題ありません。ただし、それだけでは記録になりません。</p>
+</div>
 
-        <article class="card">
-          <div class="step-icon">📮</div>
-          <h3>書面を郵送する</h3>
-          <p>
-            退職届を郵送すると、書面として記録を残しやすくなります。
-            送付方法や宛先は、会社のルールに合わせて確認しましょう。
-          </p>
-        </article>
-      </div>
-    </section>
+<div class="card">
+<strong>② 退職届を作成する</strong>
+<p>正式な意思表示は書面で行います。退職日を明確に記載します。</p>
+</div>
 
-    <section class="notice">
-      <div class="notice-icon">⚠️</div>
-      <div>
-        <h2>注意点</h2>
-        <p>
-          退職時は、伝え方だけでなく「記録」と「確認」が重要です。
-          後から揉めないよう、最低限ここだけ押さえておきましょう。
-        </p>
-        <ul>
-          <li>雇用契約書や就業規則の申出期限を確認する</li>
-          <li>退職日を明確にする</li>
-          <li>送信履歴・郵送記録などを残す</li>
-          <li>貸与品や引き継ぎの有無を整理する</li>
-        </ul>
-      </div>
-    </section>
+<div class="card">
+<strong>③ 郵送で提出する</strong>
+<p>出社が難しい場合は郵送が有効です。記録が残る方法を選びます。</p>
+</div>
 
-    <section class="section">
-      <h2 class="section-title">迷ったときの考え方</h2>
+</section>
 
-      <div class="split">
-        <article class="card">
-          <h3>無理に対面へこだわらない</h3>
-          <p>
-            対面で話すことが難しい事情があるなら、別の手段で意思を伝えることも検討できます。
-            大切なのは、退職の意思を曖昧にしないことです。
-          </p>
-        </article>
+<section class="notice">
+<strong>非推奨の手段</strong>
+<ul>
+<li>メールのみで完結させる（正式な書面にならない）</li>
+<li>電話のみで済ませる（記録が残らない）</li>
+</ul>
+<p>
+採用時は電話であっても、退職は記録が重要です。  
+最低でも「書面提出」を前提にしてください。
+</p>
+</section>
 
-        <article class="card">
-          <h3>退職は最後の交渉でもある</h3>
-          <p>
-            退職時には、退職日・引き継ぎ・貸与品・書類などの確認が発生します。
-            落ち着いて、記録が残る形で進めましょう。
-          </p>
-        </article>
-      </div>
-    </section>
+<section class="cta">
+<h2>退職届を作成して、確実に残す</h2>
+<p>書面を用意しておくことで、トラブルを避けやすくなります。</p>
+<a href="/">退職届を作成する</a>
+</section>
 
-    <section class="section">
-      <h2 class="section-title">最低限チェックすること</h2>
-
-      <div class="card">
-        <ul class="mini-list">
-          <li>退職日をいつにするか</li>
-          <li>誰に連絡するか（上司・人事など）</li>
-          <li>書面提出が必要か</li>
-          <li>郵送する場合の宛先</li>
-          <li>返却物や会社から受け取る書類</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="cta">
-      <h2>退職届を作って、書面で残す</h2>
-      <p>
-        対面やメールだけでは不安な場合は、退職届を作成しておくと状況を整理しやすくなります。
-        無料で作成できます。
-      </p>
-      <a class="button button-primary" href="/">退職届を作成する</a>
-    </section>
-
-    <p class="footer-note">
-      ※このページは一般的な情報提供です。個別の労務トラブルや法的判断が必要な場合は、専門家へ相談してください。
-    </p>
-  </main>
+</main>
 </body>
 </html>
