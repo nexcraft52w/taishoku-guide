@@ -3,12 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>退職の電話が無理なとき｜退職ガイド</title>
+
+  <title>退職の電話が無理なとき｜電話以外で退職の意思を伝える方法</title>
   <meta
     name="description"
-    content="退職を電話で伝えるのがつらい、怖い、無理だと感じる方へ。無理に電話だけで済ませず、書面や郵送も含めた現実的な退職の伝え方を解説します。"
+    content="退職の電話が怖い、つらい、無理だと感じる方向けに、電話以外で退職の意思を伝える考え方をやさしく解説します。怒られそう、引き止められそうで不安な方へ。"
   />
+
   <style>
+    :root {
+      --navy: #12315c;
+      --blue: #2f7ed8;
+      --light-blue: #eef6ff;
+      --soft-red: #ff6b6b;
+      --text: #233044;
+      --muted: #65758b;
+      --border: #d9e6f5;
+      --bg: #f8fbff;
+      --white: #ffffff;
+    }
+
     * {
       box-sizing: border-box;
     }
@@ -16,298 +30,512 @@
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
       line-height: 1.8;
-      color: #222;
-      background: #fff8f1;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--navy);
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+
+    .brand-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      background: var(--light-blue);
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+    }
+
+    .brand-sub {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 14px;
+      color: var(--navy);
+      white-space: nowrap;
+    }
+
+    .nav a {
+      text-decoration: none;
+    }
+
+    .nav a.current {
+      color: var(--blue);
+      font-weight: 700;
+      border-bottom: 2px solid var(--blue);
+      padding-bottom: 6px;
     }
 
     .page {
-      max-width: 920px;
+      max-width: 1040px;
       margin: 0 auto;
-      padding: 24px 16px 56px;
+      padding: 42px 20px 56px;
     }
 
-    header {
+    .hero {
       text-align: center;
-      margin-bottom: 24px;
-    }
-
-    .site-title {
-      display: inline-block;
-      margin-bottom: 10px;
-      font-size: 14px;
-      font-weight: 700;
-      color: #8a4b1f;
-      letter-spacing: 0.08em;
+      margin-bottom: 30px;
     }
 
     h1 {
       margin: 0;
-      font-size: clamp(26px, 6vw, 42px);
-      line-height: 1.35;
-      color: #3a2418;
+      color: var(--navy);
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.25;
+      letter-spacing: 0.04em;
     }
 
     .lead {
-      max-width: 720px;
-      margin: 16px auto 0;
-      font-size: 16px;
-      color: #5f5148;
-      text-align: left;
+      margin: 18px auto 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 17px;
     }
 
-    .manga-box {
-      margin: 28px auto;
-      padding: 12px;
-      background: #fff;
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin: 34px 0 36px;
+      direction: rtl;
+    }
+
+    .story-card {
+      direction: ltr;
+      background: var(--white);
+      border: 1px solid var(--border);
       border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(84, 48, 24, 0.12);
+      overflow: hidden;
+      box-shadow: 0 14px 30px rgba(18, 49, 92, 0.08);
     }
 
-    .manga-box img {
-      display: block;
+    .story-image {
+      aspect-ratio: 4 / 3;
+      background: #eef3f8;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .story-image img {
       width: 100%;
-      height: auto;
-      border-radius: 12px;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
-    .note {
-      margin-top: 10px;
-      font-size: 13px;
-      color: #7b6b61;
-      text-align: center;
+    .story-text {
+      padding: 16px;
+      min-height: 132px;
     }
 
-    .cta {
-      margin: 30px auto;
-      padding: 24px;
-      background: #fff;
-      border: 2px solid #f0c7a0;
-      border-radius: 18px;
-      text-align: center;
-      box-shadow: 0 8px 22px rgba(84, 48, 24, 0.08);
-    }
-
-    .cta-title {
-      margin: 0 0 10px;
-      font-size: 22px;
-      font-weight: 800;
-      color: #3a2418;
-    }
-
-    .cta-text {
-      margin: 0 auto 18px;
-      max-width: 640px;
-      color: #5f5148;
-      text-align: left;
-    }
-
-    .button-row {
-      display: flex;
-      flex-wrap: wrap;
+    .story-number {
+      display: inline-flex;
+      width: 28px;
+      height: 28px;
+      align-items: center;
       justify-content: center;
-      gap: 12px;
-    }
-
-    .button {
-      display: inline-block;
-      min-width: 220px;
-      padding: 14px 18px;
-      border-radius: 999px;
+      border-radius: 8px;
+      background: var(--navy);
+      color: var(--white);
       font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .story-text p {
+      margin: 0;
+      color: var(--navy);
+      font-weight: 700;
+      line-height: 1.65;
+    }
+
+    .cta-card {
+      margin: 34px 0;
+      padding: 28px;
+      border: 1px solid #ffd6a8;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #fffaf2, #ffffff);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .cta-card h2 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 24px;
+      line-height: 1.4;
+    }
+
+    .cta-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 260px;
+      padding: 16px 24px;
+      border-radius: 14px;
+      background: var(--soft-red);
+      color: var(--white);
       text-decoration: none;
-      text-align: center;
+      font-weight: 800;
+      box-shadow: 0 12px 26px rgba(255, 107, 107, 0.28);
     }
 
-    .button-primary {
-      color: #fff;
-      background: #d86f27;
+    .content {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 34px;
     }
 
-    .button-secondary {
-      color: #8a4b1f;
-      background: #fff3e8;
-      border: 1px solid #f0c7a0;
-    }
-
-    article {
-      margin-top: 34px;
-      padding: 28px 22px;
-      background: #fff;
-      border-radius: 18px;
-      box-shadow: 0 8px 24px rgba(84, 48, 24, 0.08);
+    .content section + section {
+      border-top: 1px solid var(--border);
+      margin-top: 30px;
+      padding-top: 30px;
     }
 
     h2 {
-      margin: 34px 0 12px;
-      padding-left: 12px;
-      border-left: 5px solid #d86f27;
+      margin: 0 0 14px;
+      color: var(--navy);
       font-size: 24px;
       line-height: 1.45;
-      color: #3a2418;
-    }
-
-    h2:first-child {
-      margin-top: 0;
     }
 
     p {
-      margin: 0 0 16px;
+      margin: 0 0 14px;
     }
 
-    ul {
-      margin: 0 0 18px;
-      padding-left: 1.4em;
+    .strong {
+      color: var(--soft-red);
+      font-weight: 800;
     }
 
-    .soft-box {
-      margin: 22px 0;
-      padding: 18px;
-      background: #fff8f1;
-      border-radius: 14px;
-      border: 1px solid #f1d6bd;
+    .reason-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
     }
 
-    .link-list {
-      margin-top: 36px;
-      padding: 22px;
-      background: #fff3e8;
+    .reason-list li {
+      border: 1px solid var(--border);
       border-radius: 16px;
+      padding: 18px;
+      background: #fbfdff;
+      color: var(--navy);
+      font-weight: 700;
     }
 
-    .link-list h2 {
-      margin-top: 0;
+    .point-box {
+      margin-top: 18px;
+      padding: 20px;
+      border-left: 5px solid var(--soft-red);
+      background: #fff7f7;
+      border-radius: 14px;
+    }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .method-card {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      background: #fbfdff;
+    }
+
+    .method-card h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 18px;
+    }
+
+    .method-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .bottom-links {
+      margin-top: 34px;
+      text-align: center;
+      color: var(--blue);
+      font-size: 14px;
+    }
+
+    .bottom-links a {
+      margin: 0 10px;
     }
 
     footer {
-      margin-top: 36px;
+      margin-top: 28px;
       text-align: center;
+      color: var(--muted);
       font-size: 13px;
-      color: #7b6b61;
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 900px) {
+      .story-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .header-inner {
+        display: block;
+      }
+
+      .nav {
+        margin-top: 14px;
+        gap: 14px;
+        overflow-x: auto;
+        padding-bottom: 4px;
+      }
+
       .page {
-        padding: 18px 12px 44px;
+        padding-top: 30px;
       }
 
-      article,
-      .cta {
-        padding: 20px 16px;
+      .story-grid {
+        grid-template-columns: 1fr;
+        direction: ltr;
       }
 
-      .button {
+      .cta-card {
+        grid-template-columns: 1fr;
+        padding: 22px;
+      }
+
+      .cta-button {
         width: 100%;
+        min-width: 0;
+      }
+
+      .content {
+        padding: 24px 18px;
+      }
+
+      .reason-list,
+      .method-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
+
 <body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="退職ガイド トップへ">
+        <span class="brand-icon">📮</span>
+        <span>
+          退職ガイド
+          <span class="brand-sub">漫画でわかる退職のすすめ方</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="ページ内ナビゲーション">
+        <a href="index.html">トップ</a>
+        <a href="taishoku-yuso.html">郵送で退職する方法</a>
+        <a class="current" href="taishoku-denwa-muri.html">退職 電話 無理</a>
+      </nav>
+    </div>
+  </header>
+
   <main class="page">
-    <header>
-      <span class="site-title">退職ガイド</span>
-      <h1>退職の電話が無理なとき</h1>
+    <section class="hero">
+      <h1>退職の電話が無理だと感じる人へ</h1>
       <p class="lead">
-        「電話しないといけない」と分かっていても、声が出ない。上司の反応を想像するだけで怖い。
-        そんな状態で、無理に電話だけで進めようとすると、かえって話がこじれることもあります。
+        「退職したいけど、電話で伝えるのが怖い」。
+        そう感じるのは、弱いからではありません。
+        怒られそう、引き止められそう、うまく話せなさそう。
+        その不安があるなら、電話以外の方法も考えて大丈夫です。
       </p>
-    </header>
-
-    <section class="manga-box" aria-label="退職の電話が無理なときの漫画">
-      <img src="taishoku-denwa-muri-manga.png" alt="退職の電話が怖くてかけられない人の気持ちを描いた漫画" />
-      <div class="note">※漫画は右から左へ読む構成です。</div>
     </section>
 
-    <section class="cta">
-      <p class="cta-title">電話だけで抱え込まなくて大丈夫です</p>
-      <p class="cta-text">
-        退職の意思を伝える方法は、電話だけではありません。状況によっては、書面で内容を整理し、
-        後から確認できる形で伝えるほうが落ち着いて進めやすい場合があります。
-      </p>
-      <div class="button-row">
-        <a class="button button-primary" href="taishoku-yuso.html">郵送で伝える方法を見る</a>
-        <a class="button button-secondary" href="index.html">退職ガイドのトップへ戻る</a>
-      </div>
+    <section class="story-grid" aria-label="退職の電話がつらい人の流れ">
+      <article class="story-card">
+        <div class="story-image">
+          <img src="taishoku-denwa-muri-01.png" alt="退職を電話で伝えるのが怖くてスマホを見つめる人のイラスト" />
+        </div>
+        <div class="story-text">
+          <span class="story-number">1</span>
+          <p>退職したい。でも、電話で伝えることを考えるだけで気が重くなる。</p>
+        </div>
+      </article>
+
+      <article class="story-card">
+        <div class="story-image">
+          <img src="taishoku-denwa-muri-02.png" alt="怒られそうで不安になっている人のイラスト" />
+        </div>
+        <div class="story-text">
+          <span class="story-number">2</span>
+          <p>怒られたらどうしよう。引き止められたら断れないかもしれない。</p>
+        </div>
+      </article>
+
+      <article class="story-card">
+        <div class="story-image">
+          <img src="taishoku-denwa-muri-03.png" alt="パソコンの前で電話以外の退職方法を調べる人のイラスト" />
+        </div>
+        <div class="story-text">
+          <span class="story-number">3</span>
+          <p>調べてみたら、電話以外にも退職の意思を伝える方法があると知る。</p>
+        </div>
+      </article>
+
+      <article class="story-card">
+        <div class="story-image">
+          <img src="taishoku-denwa-muri-04.png" alt="落ち着いて前を向く人のイラスト" />
+        </div>
+        <div class="story-text">
+          <span class="story-number">4</span>
+          <p>無理に電話しなくていい。自分を守る形で、退職の準備を進める。</p>
+        </div>
+      </article>
     </section>
 
-    <article>
-      <h2>退職の電話が無理だと感じるのは、珍しいことではありません</h2>
-      <p>
-        退職を伝える電話は、ただの連絡ではありません。相手が上司であれば、引き止められるかもしれない、
-        怒られるかもしれない、理由を細かく聞かれるかもしれない。そう考えると、電話をかける前に手が止まるのは自然です。
-      </p>
-      <p>
-        特に、職場で強いストレスを感じている場合や、すでに出勤が難しい状態になっている場合、電話で冷静に説明すること自体が
-        大きな負担になります。無理に電話一本で完結させようとしなくても、まずは落ち着いて伝え方を整理することが大切です。
-      </p>
-
-      <h2>電話は記録が残りにくい</h2>
-      <p>
-        電話はすぐに伝えられる一方で、あとから内容を確認しにくい方法です。
-        「言った」「聞いていない」という行き違いが起きる可能性もあります。
-      </p>
-      <p>
-        退職の意思を伝える場面では、日付、退職希望日、提出書類などを後から確認できる形にしておくほうが安心です。
-        電話で一報を入れる場合でも、あわせて書面を提出する流れにすると、内容を整理しやすくなります。
-      </p>
-
-      <h2>退職届を用意してから伝える</h2>
-      <p>
-        電話が不安な場合は、先に退職届を用意しておくと、伝える内容がはっきりします。
-        頭の中だけで説明しようとすると焦りますが、書面にしておけば「退職の意思」「退職日」「提出日」を整理できます。
-      </p>
-      <div class="soft-box">
+    <section class="cta-card">
+      <div>
+        <h2>つらい電話を、無理に続けなくて大丈夫です。</h2>
         <p>
-          退職の伝え方に迷うときは、電話で長く説明しようとするより、退職届を中心にして進めるほうが落ち着きやすいです。
-          ただし、会社の就業規則や状況によって必要な手続きが異なる場合があります。
+          退職の意思を落ち着いて伝える方法は、電話だけではありません。
+          自分を守る形で準備することも、退職への一歩です。
         </p>
       </div>
-
-      <h2>郵送という選択肢もある</h2>
-      <p>
-        どうしても電話や対面が難しい場合、退職届を郵送する方法もあります。
-        郵送であれば、伝える内容を紙に整理でき、提出した事実も比較的確認しやすくなります。
-      </p>
-      <p>
-        送る際は、宛先、差出人、送付物の内容を確認し、控えを残しておくと安心です。
-        レターパックなど、配達状況を確認しやすい方法を使う人もいます。
-      </p>
-
-      <h2>無理に理由を細かく話さなくてもよい</h2>
-      <p>
-        退職理由を細かく説明しようとすると、話が長くなり、引き止めや反論につながることがあります。
-        退職の意思を伝える場面では、感情的な説明よりも、退職する意思と必要な手続きを簡潔に伝えることが重要です。
-      </p>
-      <ul>
-        <li>退職の意思があること</li>
-        <li>退職希望日</li>
-        <li>退職届を提出すること</li>
-        <li>貸与物や書類の確認をしたいこと</li>
-      </ul>
-      <p>
-        このあたりを整理しておくと、電話をする場合でも、書面で伝える場合でも、ぶれにくくなります。
-      </p>
-
-      <h2>つらいときほど、記録に残る形で進める</h2>
-      <p>
-        退職は大きな決断です。怖い、気まずい、連絡したくないと感じること自体を責める必要はありません。
-        ただし、何も伝えないまま放置すると、後の確認が難しくなる場合があります。
-      </p>
-      <p>
-        だからこそ、無理に電話だけで終わらせようとせず、書面や郵送も含めて、落ち着いて進められる方法を選ぶことが大切です。
-      </p>
-    </article>
-
-    <section class="link-list">
-      <h2>あわせて読みたい</h2>
-      <ul>
-        <li><a href="index.html">退職ガイド トップ</a></li>
-        <li><a href="taishoku-yuso.html">退職届を郵送する方法</a></li>
-      </ul>
+      <a class="cta-button" href="taishoku-yuso.html">
+        郵送で退職する方法を見る
+      </a>
     </section>
 
+    <article class="content">
+      <section>
+        <h2>退職の電話がつらい理由</h2>
+        <p>
+          退職の連絡を電話でする場面では、相手の反応をその場で受け止める必要があります。
+          そのため、退職の意思は固まっていても、電話をかける直前で手が止まってしまう人は少なくありません。
+        </p>
+
+        <ul class="reason-list">
+          <li>怒られそうで怖い</li>
+          <li>引き止められて断れなさそう</li>
+          <li>緊張してうまく話せなさそう</li>
+        </ul>
+
+        <div class="point-box">
+          無理をして心や体をすり減らす必要はありません。
+          <span class="strong">あなたの気持ちを一番に考えること</span>も大切です。
+        </div>
+      </section>
+
+      <section>
+        <h2>電話以外でも、退職の意思を伝える方法はあります</h2>
+        <p>
+          退職の意思は、必ず電話だけで伝えなければならないわけではありません。
+          状況によっては、書面で落ち着いて伝える方法を選ぶこともできます。
+        </p>
+        <p>
+          特に、電話だと感情的なやり取りになりそうな場合や、言った・言わないの不安がある場合は、
+          後から内容を確認しやすい形で伝えることを検討してもよいでしょう。
+        </p>
+      </section>
+
+      <section>
+        <h2>郵送で退職を伝えるメリット</h2>
+
+        <div class="method-grid">
+          <div class="method-card">
+            <h3>心の負担を減らせる</h3>
+            <p>
+              対面や電話のプレッシャーを避けながら、落ち着いて退職の意思を伝えやすくなります。
+            </p>
+          </div>
+
+          <div class="method-card">
+            <h3>自分のペースで準備できる</h3>
+            <p>
+              文章を確認しながら進められるため、焦って言い間違える不安を減らせます。
+            </p>
+          </div>
+
+          <div class="method-card">
+            <h3>効力の強い方法を選びやすい</h3>
+            <p>
+              記録が残る形にすることで、後から内容を確認しやすくなります。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>まずは、自分を守る形を選んでください</h2>
+        <p>
+          退職は、人生を立て直すための選択でもあります。
+          電話が怖い、もう話したくない、そう感じるほど追い込まれているなら、
+          まずは自分の心を守る方法を選んでください。
+        </p>
+        <p>
+          電話で伝えることが難しい場合は、郵送で退職の意思を伝える流れも確認しておくと安心です。
+        </p>
+      </section>
+    </article>
+
+    <div class="bottom-links">
+      <a href="index.html">トップページに戻る</a>
+      <span>｜</span>
+      <a href="taishoku-yuso.html">郵送で退職する方法を見る</a>
+    </div>
+
     <footer>
-      <p>© 退職ガイド</p>
+      © 2026 退職ガイド
     </footer>
   </main>
 </body>
