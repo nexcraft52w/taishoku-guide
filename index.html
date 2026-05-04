@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>退職ツール｜退職時の連絡方法と手続き</title>
-
-  <meta name="description" content="退職時の連絡方法や手続きについて、対面が難しいケースも含めて分かりやすく解説します。トラブルを避けるためのポイントも紹介。" />
+  <title>退職ツール｜退職の連絡方法・電話がつらい場合・郵送で退職する方法</title>
+  <meta
+    name="description"
+    content="退職の連絡方法について、電話がつらい場合や郵送で退職届を提出する方法などを漫画と文章でわかりやすく解説します。退職時の不安やトラブルを減らすためのポイントもまとめています。"
+  />
 
   <style>
     body {
@@ -14,13 +16,14 @@
       background: #f3f4f6;
       color: #111827;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.8;
     }
 
-    /* ヘッダー */
     .site-header {
       background: #fff;
       border-bottom: 1px solid #ddd;
     }
+
     .header-inner {
       max-width: 980px;
       margin: 0 auto;
@@ -28,17 +31,34 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 16px;
     }
+
     .brand {
       font-weight: bold;
       text-decoration: none;
       color: #111827;
+      white-space: nowrap;
     }
+
+    .nav {
+      display: flex;
+      gap: 16px;
+      white-space: nowrap;
+      overflow-x: auto;
+    }
+
     .nav a {
-      margin-left: 16px;
       text-decoration: none;
       color: #1d4ed8;
       font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav a.current {
+      color: #111827;
+      border-bottom: 2px solid #111827;
+      padding-bottom: 4px;
     }
 
     .page {
@@ -54,10 +74,24 @@
       margin: 16px 0;
     }
 
+    h2 {
+      font-size: clamp(22px, 4vw, 30px);
+      line-height: 1.4;
+      margin: 36px 0 14px;
+      border-left: 5px solid #1d4ed8;
+      padding-left: 12px;
+    }
+
+    p,
+    li {
+      font-size: 16px;
+    }
+
     .lead {
       font-size: clamp(14px, 2.8vw, 18px);
       line-height: 1.8;
       margin-bottom: 20px;
+      font-weight: 600;
     }
 
     .manga-wrap {
@@ -71,11 +105,20 @@
       display: block;
       border-radius: 10px;
       border: 1px solid #ddd;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     }
 
     .link-block {
-      margin: 20px 0;
+      margin: 22px 0;
+      padding: 18px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+    }
+
+    .link-block p {
+      margin: 0 0 10px;
+      font-weight: 700;
     }
 
     .link-block a {
@@ -83,12 +126,12 @@
       margin: 8px 0;
       color: #1d4ed8;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .cta {
       display: block;
-      margin: 24px auto 0;
+      margin: 28px auto;
       padding: 16px 20px;
       max-width: 420px;
       text-align: center;
@@ -104,6 +147,52 @@
       opacity: 0.9;
     }
 
+    .content {
+      margin-top: 32px;
+    }
+
+    .content ul {
+      padding-left: 1.4em;
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 16px;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      border-radius: 10px;
+    }
+
+    .article-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .article-card {
+      display: block;
+      padding: 18px;
+      border: 1px solid #dbeafe;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #111827;
+      background: #f8fbff;
+    }
+
+    .article-card strong {
+      display: block;
+      color: #1d4ed8;
+      margin-bottom: 6px;
+    }
+
+    .article-card span {
+      display: block;
+      color: #4b5563;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
     @media (min-width: 768px) {
       .page {
         padding: 36px 32px 56px;
@@ -112,13 +201,25 @@
         border-radius: 18px;
       }
     }
+
+    @media (max-width: 760px) {
+      .header-inner {
+        display: block;
+      }
+
+      .nav {
+        margin-top: 10px;
+        padding-bottom: 4px;
+      }
+
+      .article-list {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 
 <body>
-
-  <!-- ヘッダー -->
-  <body>
   <div id="site-header"></div>
 
   <script>
@@ -136,27 +237,34 @@
       });
   </script>
 
-  <div class="page">
-
+  <main class="page">
     <h1>退職の連絡方法ガイド</h1>
 
     <p class="lead">
       退職に関する連絡方法や手続きについて、状況に応じた現実的な対応をまとめています。
+      電話で伝えるのがつらい場合や、郵送で退職届を提出したい場合の考え方を、漫画と文章で確認できます。
     </p>
 
     <div class="manga-wrap">
       <img
         src="./taishoku-manga.png"
-        alt="退職の流れを説明する漫画"
+        alt="退職の連絡から郵送提出までの流れを説明する漫画"
       />
     </div>
 
-    <div class="link-block">
+    <div class="link-block" id="links">
+      <p>状況に合わせて確認できます</p>
+
       <a href="taishoku-denwa-muri.html">
         👉 電話で伝えるのがつらい
       </a>
+
       <a href="taishoku-yuso.html">
         👉 郵送で退職したい
+      </a>
+
+      <a href="taishoku-mushi.html">
+        👉 退職届を出したのに無視された
       </a>
     </div>
 
@@ -164,6 +272,73 @@
       退職届を作成する（無料）
     </a>
 
-  </div>
+    <section class="content">
+      <h2>退職の連絡方法について</h2>
+
+      <p>
+        退職を伝える方法には、対面、電話、メール、書面、郵送などがあります。
+        ただし、退職の意思を伝える場面では、相手の反応が不安だったり、
+        引き止められそうで言い出しにくかったりすることもあります。
+      </p>
+
+      <p>
+        とくに、電話で退職を伝えるのがつらい場合は、無理にその場で話そうとして
+        心や体に負担をかける必要はありません。状況によっては、退職届を作成し、
+        書面で落ち着いて意思を伝える方法も検討できます。
+      </p>
+
+      <p>
+        このサイトでは、退職時の連絡方法を漫画で整理しながら、
+        「電話がつらい場合」「郵送で退職届を送る場合」「会社から連絡がない場合」など、
+        状況別に確認できるようにしています。
+      </p>
+
+      <h2>こんな方におすすめです</h2>
+
+      <ul>
+        <li>退職したいけれど、電話で伝えるのが怖い</li>
+        <li>上司に引き止められそうで不安</li>
+        <li>退職届を郵送してもよいのか知りたい</li>
+        <li>普通郵便とレターパックの違いを知りたい</li>
+        <li>退職届を送ったのに会社から連絡がなくて不安</li>
+      </ul>
+
+      <div class="note">
+        退職の進め方は、勤務先との関係や状況によって変わります。
+        不安が大きい場合は、送った日や連絡内容を整理しながら、
+        記録が残る形で進めることを意識しましょう。
+      </div>
+
+      <h2>記事一覧</h2>
+
+      <div class="article-list">
+        <a class="article-card" href="taishoku-denwa-muri.html">
+          <strong>退職の電話がつらい人へ</strong>
+          <span>電話で退職を伝えるのが怖い、うまく話せない方向けのページです。</span>
+        </a>
+
+        <a class="article-card" href="taishoku-yuso.html">
+          <strong>郵送で退職する方法</strong>
+          <span>退職届を郵送する流れや、レターパックを使う理由を解説します。</span>
+        </a>
+
+        <a class="article-card" href="taishoku-mushi.html">
+          <strong>退職届を出したのに無視されたら</strong>
+          <span>普通郵便で送って連絡がない場合や、記録が残る方法を整理します。</span>
+        </a>
+      </div>
+
+      <h2>まずは退職届を準備する</h2>
+
+      <p>
+        退職を進めるうえで、退職届を準備しておくと、意思を整理しやすくなります。
+        退職届をまだ作っていない場合は、退職届作成ページから必要事項を入力して作成できます。
+      </p>
+
+      <a class="cta" href="https://www.taishoku-tool.com/">
+        退職届を作成する（無料）
+      </a>
+    </section>
+  </main>
 </body>
 </html>
