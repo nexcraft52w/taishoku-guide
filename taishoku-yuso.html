@@ -101,18 +101,22 @@
 <body>
 
   <!-- ヘッダー -->
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html">
-        📮 退職ツール
-      </a>
-      <nav class="nav">
-        <a href="index.html">トップ</a>
-        <a href="taishoku-yuso.html">郵送で退職する方法</a>
-        <a href="taishoku-denwa-muri.html">退職 電話 無理</a>
-      </nav>
-    </div>
-  </header>
+  <div id="site-header"></div>
+
+  <script>
+    fetch("header.html")
+      .then((response) => response.text())
+      .then((html) => {
+        document.getElementById("site-header").innerHTML = html;
+
+        const current = location.pathname.split("/").pop() || "index.html";
+        document.querySelectorAll(".nav a").forEach((link) => {
+          if (link.getAttribute("href") === current) {
+            link.classList.add("current");
+          }
+        });
+      });
+  </script>
 
   <main>
     <h1>退職届を郵送する方法｜電話せず辞めるやめ方を漫画で解説</h1>
