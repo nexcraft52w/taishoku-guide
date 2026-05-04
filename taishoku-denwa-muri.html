@@ -128,61 +128,21 @@
       font-size: 17px;
     }
 
-    .story-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
+    .manga-block {
       margin: 34px 0 36px;
-      direction: rtl;
-    }
-
-    .story-card {
-      direction: ltr;
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 14px 30px rgba(18, 49, 92, 0.08);
+      border-radius: 22px;
+      padding: 14px;
+      box-shadow: 0 18px 40px rgba(18, 49, 92, 0.08);
     }
 
-    .story-image {
-      aspect-ratio: 4 / 3;
-      background: #eef3f8;
-      display: grid;
-      place-items: center;
-      overflow: hidden;
-    }
-
-    .story-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .manga-image {
       display: block;
-    }
-
-    .story-text {
-      padding: 16px;
-      min-height: 132px;
-    }
-
-    .story-number {
-      display: inline-flex;
-      width: 28px;
-      height: 28px;
-      align-items: center;
-      justify-content: center;
-      border-radius: 8px;
-      background: var(--navy);
-      color: var(--white);
-      font-weight: 800;
-      margin-bottom: 10px;
-    }
-
-    .story-text p {
-      margin: 0;
-      color: var(--navy);
-      font-weight: 700;
-      line-height: 1.65;
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      background: #eef3f8;
     }
 
     .cta-card {
@@ -322,12 +282,6 @@
       font-size: 13px;
     }
 
-    @media (max-width: 900px) {
-      .story-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
     @media (max-width: 760px) {
       .header-inner {
         display: block;
@@ -344,9 +298,13 @@
         padding-top: 30px;
       }
 
-      .story-grid {
-        grid-template-columns: 1fr;
-        direction: ltr;
+      .manga-block {
+        padding: 8px;
+        border-radius: 16px;
+      }
+
+      .manga-image {
+        border-radius: 12px;
       }
 
       .cta-card {
@@ -401,46 +359,12 @@
       </p>
     </section>
 
-    <section class="story-grid" aria-label="退職の電話がつらい人の流れ">
-      <article class="story-card">
-        <div class="story-image">
-          <img src="taishoku-denwa-muri-01.png" alt="退職を電話で伝えるのが怖くてスマホを見つめる人のイラスト" />
-        </div>
-        <div class="story-text">
-          <span class="story-number">1</span>
-          <p>退職したい。でも、電話で伝えることを考えるだけで気が重くなる。</p>
-        </div>
-      </article>
-
-      <article class="story-card">
-        <div class="story-image">
-          <img src="taishoku-denwa-muri-02.png" alt="怒られそうで不安になっている人のイラスト" />
-        </div>
-        <div class="story-text">
-          <span class="story-number">2</span>
-          <p>怒られたらどうしよう。引き止められたら断れないかもしれない。</p>
-        </div>
-      </article>
-
-      <article class="story-card">
-        <div class="story-image">
-          <img src="taishoku-denwa-muri-03.png" alt="パソコンの前で電話以外の退職方法を調べる人のイラスト" />
-        </div>
-        <div class="story-text">
-          <span class="story-number">3</span>
-          <p>調べてみたら、電話以外にも退職の意思を伝える方法があると知る。</p>
-        </div>
-      </article>
-
-      <article class="story-card">
-        <div class="story-image">
-          <img src="taishoku-denwa-muri-04.png" alt="落ち着いて前を向く人のイラスト" />
-        </div>
-        <div class="story-text">
-          <span class="story-number">4</span>
-          <p>無理に電話しなくていい。自分を守る形で、退職の準備を進める。</p>
-        </div>
-      </article>
+    <section class="manga-block" aria-label="退職の電話がつらい人の漫画">
+      <img
+        class="manga-image"
+        src="taishoku-denwa-muri-manga.png"
+        alt="退職の電話がつらいと感じる人へ向けた漫画。電話が怖い、緊張して話せない、引き留められたら断れない、考えるだけで疲れてしまう気持ちを表した内容。"
+      />
     </section>
 
     <section class="cta-card">
@@ -465,9 +389,9 @@
         </p>
 
         <ul class="reason-list">
-          <li>怒られそうで怖い</li>
-          <li>引き止められて断れなさそう</li>
-          <li>緊張してうまく話せなさそう</li>
+          <li>退職したいけど、気が重すぎる</li>
+          <li>うまく話せるか不安で、頭が真っ白になりそう</li>
+          <li>引き留められたら、断れないかもしれない</li>
         </ul>
 
         <div class="point-box">
@@ -535,7 +459,7 @@
     </div>
 
     <footer>
-      © 2026 退職ガイド
+      taishoku-tool.com
     </footer>
   </main>
 </body>
