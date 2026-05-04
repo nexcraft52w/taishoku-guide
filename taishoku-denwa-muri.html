@@ -330,23 +330,22 @@
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html" aria-label="トップへ">
-        <span class="brand-icon">📮</span>
-          <span>
-            退職ツール
-          <span class="brand-sub">漫画でわかる退職のすすめ方</span>
-        </span>
-      </a>
+   <div id="site-header"></div>
 
-      <nav class="nav" aria-label="ページ内ナビゲーション">
-        <a href="index.html">トップ</a>
-        <a href="taishoku-yuso.html">郵送で退職する方法</a>
-        <a class="current" href="taishoku-denwa-muri.html">退職 電話 無理</a>
-      </nav>
-    </div>
-  </header>
+  <script>
+    fetch("header.html")
+      .then((response) => response.text())
+      .then((html) => {
+        document.getElementById("site-header").innerHTML = html;
+
+        const current = location.pathname.split("/").pop() || "index.html";
+        document.querySelectorAll(".nav a").forEach((link) => {
+          if (link.getAttribute("href") === current) {
+            link.classList.add("current");
+          }
+        });
+      });
+  </script>
 
   <main class="page">
     <section class="hero">
