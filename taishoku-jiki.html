@@ -279,17 +279,15 @@
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="site-logo" href="./index.html">退職ツール</a>
-      <nav class="header-nav" aria-label="主要ナビゲーション">
-        <a href="./index.html">トップ</a>
-        <a href="./taishoku-yuso.html">退職届の郵送</a>
-        <a href="./taishoku-denwa-muri.html">電話が無理な場合</a>
-        <a href="https://www.taishoku-tool.com/">退職届を作る</a>
-      </nav>
-    </div>
-  </header>
+  <div id="header"></div>
+
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("header").innerHTML = html;
+        });
+    </script>
 
   <main class="page">
     <section class="hero">
