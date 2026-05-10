@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="./favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="./favicon.png" />
+  
+  <title>退職を伝える時期はいつ？体調不良で出勤できない場合の対応｜退職ツール</title>
+
+  <meta
+    name="description"
+    content="退職を伝える時期の目安は最低でも2週間前です。ただし就業規則でさらに早めに定められている場合があります。体調不良で出勤できない場合や、退職届を郵送する際の注意点も解説します。"
+  />
+
+  <style>
+    body {
+      margin: 0;
+      background: #f3f4f6;
+      color: #111827;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .header-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .site-logo {
+      font-weight: 800;
+      color: #1e3a8a;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+
+    .header-nav {
+      display: flex;
+      gap: 14px;
+      font-size: 0.92rem;
+    }
+
+    .header-nav a {
+      color: #374151;
+      text-decoration: none;
+    }
+
+    .header-nav a:hover {
+      color: #1e3a8a;
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 16px 56px;
+    }
+
+    .hero {
+      margin-bottom: 22px;
+      padding: 28px 20px;
+      border-radius: 22px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+    }
+
+    .breadcrumb {
+      margin: 0 0 12px;
+      font-size: 0.86rem;
+      color: #6b7280;
+    }
+
+    .breadcrumb a {
+      color: #4b5563;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(1.7rem, 4vw, 2.45rem);
+      line-height: 1.35;
+      color: #111827;
+    }
+
+    .lead {
+      margin: 14px 0 0;
+      color: #4b5563;
+      font-size: 1rem;
+    }
+
+    .manga-wrap {
+      margin: 24px 0 34px;
+      padding: 14px;
+      border-radius: 22px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+    }
+
+    .manga-wrap img {
+      display: block;
+      width: 100%;
+      max-width: 760px;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 14px;
+    }
+
+    .article-section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 4px 48px;
+      color: #111827;
+      line-height: 1.9;
+    }
+
+    .article-section h2 {
+      margin: 36px 0 14px;
+      padding-left: 14px;
+      border-left: 5px solid #1e3a8a;
+      font-size: 1.45rem;
+      line-height: 1.45;
+      color: #111827;
+    }
+
+    .article-section p {
+      margin: 0 0 16px;
+      font-size: 1rem;
+    }
+
+    .article-section strong {
+      color: #1e3a8a;
+      font-weight: 700;
+    }
+
+    .article-section ul {
+      margin: 12px 0 20px;
+      padding: 18px 22px 18px 38px;
+      border: 1px solid #dbeafe;
+      border-radius: 14px;
+      background: #eff6ff;
+    }
+
+    .article-section li {
+      margin: 6px 0;
+    }
+
+    .notice-box {
+      margin: 22px 0;
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      color: #7c2d12;
+      font-size: 0.96rem;
+    }
+
+    .article-cta {
+      margin-top: 36px;
+      padding: 24px 20px;
+      border: 1px solid #bfdbfe;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .article-cta h2 {
+      margin-top: 0;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: #1e3a8a;
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      background: #1d4ed8;
+    }
+
+    .back-links {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 22px 4px 0;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.94rem;
+    }
+
+    .back-links a {
+      color: #1e3a8a;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .back-links a:hover {
+      text-decoration: underline;
+    }
+
+    .site-footer {
+      padding: 28px 16px;
+      background: #111827;
+      color: #d1d5db;
+      text-align: center;
+      font-size: 0.86rem;
+    }
+
+    @media (max-width: 640px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .header-nav {
+        flex-wrap: wrap;
+      }
+
+      .page {
+        padding-top: 18px;
+      }
+
+      .hero {
+        padding: 22px 16px;
+      }
+
+      .manga-wrap {
+        padding: 8px;
+      }
+
+      .article-section {
+        padding: 0 2px 40px;
+        line-height: 1.85;
+      }
+
+      .article-section h2 {
+        font-size: 1.25rem;
+      }
+
+      .article-section p,
+      .article-section li {
+        font-size: 0.96rem;
+      }
+
+      .article-cta {
+        padding: 20px 16px;
+      }
+
+      .cta-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="./index.html">退職ツール</a>
+      <nav class="header-nav" aria-label="主要ナビゲーション">
+        <a href="./index.html">トップ</a>
+        <a href="./taishoku-yuso.html">退職届の郵送</a>
+        <a href="./taishoku-denwa-muri.html">電話が無理な場合</a>
+        <a href="https://www.taishoku-tool.com/">退職届を作る</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <p class="breadcrumb">
+        <a href="./index.html">トップ</a> &gt; 退職を伝える時期
+      </p>
+      <h1>退職を伝える時期はいつ？体調不良で出勤できない場合の対応</h1>
+      <p class="lead">
+        退職を伝える時期の目安と、体調不良で出勤が難しい場合の伝え方、
+        退職届を郵送するときの注意点を整理します。
+      </p>
+    </section>
+
+    <section class="manga-wrap" aria-label="退職を伝える時期を説明する漫画">
+      <img
+        src="./taishoku-jiki-manga.png"
+        alt="退職を伝える時期と、体調不良で出勤できない場合の対応を説明する漫画"
+      />
+    </section>
+
+    <section class="article-section" id="when-to-tell-resignation">
+      <h2>退職を伝える時期はいつがいい？</h2>
+
+      <p>
+        退職を会社に伝える時期は、<strong>最低でも退職日の2週間前</strong>がひとつの目安です。
+      </p>
+
+      <p>
+        これは、退職手続きそのものや、最低限の引継ぎ、会社側の事務処理があるためです。
+        ただし、会社によっては、就業規則で「1か月前まで」など、
+        もっと早めに申し出るよう定めているケースもあります。
+      </p>
+
+      <p>
+        そのため、退職を考え始めたら、まずは自分の会社の就業規則を確認しておくと安心です。
+        ただし、就業規則の内容と法律上の考え方は別の問題になることもあるため、
+        不安がある場合は、労働基準監督署や専門家に相談することも検討してください。
+      </p>
+
+      <div class="notice-box">
+        ※このページは一般的な情報整理を目的としたものです。
+        個別の労働トラブルや法律判断が必要な場合は、専門機関への相談も検討してください。
+      </div>
+
+      <h2>体調不良で出勤できない場合はどうする？</h2>
+
+      <p>
+        体調不良などで出勤すること自体が難しい場合は、
+        無理に出社する前提で考える必要はありません。
+      </p>
+
+      <p>
+        その場合は、退職の意思だけでなく、
+        <strong>「体調不良により出勤が難しい状況であること」</strong>もあわせて会社へ伝えるとよいでしょう。
+      </p>
+
+      <p>
+        会社としても、退職する人とのやり取りに長く時間をかけ続けるより、
+        必要な確認を済ませたうえで、現実的に退職手続きを進めるケースがあります。
+      </p>
+
+      <p>
+        ただし、会社の対応は状況によって異なります。
+        連絡内容は、できるだけ記録に残る形にしておくと安心です。
+      </p>
+
+      <h2>退職届を郵送する場合の注意点</h2>
+
+      <p>
+        出勤が難しい場合や、会社と直接やり取りを続けるのが難しい場合は、
+        退職届を郵送する流れになることがあります。
+      </p>
+
+      <p>
+        郵送する場合は、退職届だけを送ればよいとは限りません。
+        会社から借りているものがないか、事前に確認しておきましょう。
+      </p>
+
+      <ul>
+        <li>社員証</li>
+        <li>健康保険証</li>
+        <li>制服</li>
+        <li>会社の鍵</li>
+        <li>パソコン・スマートフォン</li>
+        <li>会社資料・マニュアル類</li>
+      </ul>
+
+      <p>
+        これらの貸与品は、退職届を送るタイミングで一緒に返却するか、
+        返却方法を会社へ確認しておくとトラブルを避けやすくなります。
+      </p>
+
+      <p>
+        特に、鍵やパソコン、会社資料などは、会社側としても回収が必要なものです。
+        返却が遅れると、退職後に追加のやり取りが発生する可能性があります。
+      </p>
+
+      <h2>退職時のやり取りを減らすには</h2>
+
+      <p>
+        退職時は、退職届だけでなく、
+        貸与品の返却、必要書類、保険証の扱い、離職票や源泉徴収票など、
+        会社側と確認すべき項目が複数あります。
+      </p>
+
+      <p>
+        口頭だけで済ませようとすると、
+        「何を伝えたか」「何を返したか」が曖昧になりやすいです。
+      </p>
+
+      <p>
+        そのため、退職届を郵送する場合は、
+        送り状やチェック項目を整理して、会社に伝える内容をまとめておくと安心です。
+      </p>
+
+      <div class="article-cta">
+        <h2>退職届や送り状の準備に不安がある方へ</h2>
+        <p>
+          退職届の作成や、郵送時に添える送り状の整理に不安がある方は、
+          退職ツールも参考にしてみてください。
+        </p>
+        <p>
+          会社への連絡内容や返却物を整理しながら、
+          郵送前の確認に使える形で準備できます。
+        </p>
+        <a class="cta-button" href="https://www.taishoku-tool.com/">
+          退職ツールを見る
+        </a>
+      </div>
+    </section>
+
+    <div class="back-links">
+      <p><a href="./index.html">退職ガイドのトップへ戻る</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 退職ツール</p>
+  </footer>
+</body>
+</html>
