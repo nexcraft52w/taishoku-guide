@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>退職届を出した後に会社から電話が来たら？｜退職ツール</title>
+  <meta
+    name="description"
+    content="退職届を出した後に会社から電話が来た場合の対応を解説。電話に出ても、その場で約束せず、退職の意思と事務連絡を分けて対応することが大切です。"
+  />
+
+  <style>
+    body {
+      margin: 0;
+      background: #f3f4f6;
+      color: #111827;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* header.html側のクラスに合わせた共通ヘッダーCSS */
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      font-size: 14px;
+      font-weight: 700;
+      color: #111827;
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      gap: 14px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #2563eb;
+      white-space: nowrap;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 24px auto 48px;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 34px 32px 24px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: #2563eb;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+    }
+
+    .lead {
+      margin: 18px 0 0;
+      color: #4b5563;
+      font-size: 16px;
+    }
+
+    .manga {
+      padding: 26px 24px 10px;
+      background: #f8fafc;
+    }
+
+    .manga img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      border: 1px solid #dbeafe;
+      background: #fff;
+    }
+
+    .content {
+      padding: 30px 32px 38px;
+    }
+
+    h2 {
+      margin: 34px 0 12px;
+      padding-left: 14px;
+      border-left: 5px solid #2563eb;
+      font-size: 24px;
+      line-height: 1.5;
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    ul {
+      margin: 0 0 20px;
+      padding-left: 1.4em;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .point {
+      margin: 22px 0;
+      padding: 18px 20px;
+      border: 1px solid #bfdbfe;
+      border-radius: 16px;
+      background: #eff6ff;
+      font-weight: 700;
+    }
+
+    .note {
+      margin: 22px 0;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: #f9fafb;
+      color: #4b5563;
+      font-size: 14px;
+    }
+
+    .cta {
+      margin-top: 34px;
+      padding: 24px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #eff6ff, #ffffff);
+      border: 1px solid #bfdbfe;
+      text-align: center;
+    }
+
+    .cta-title {
+      margin: 0 0 8px;
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .cta-text {
+      margin: 0 0 18px;
+      color: #4b5563;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: #2563eb;
+      color: #fff;
+      font-weight: 800;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+    }
+
+    .cta-button:hover {
+      background: #1d4ed8;
+    }
+
+    .footer {
+      max-width: 980px;
+      margin: 0 auto 36px;
+      padding: 0 16px;
+      color: #6b7280;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav {
+        flex-wrap: wrap;
+        gap: 10px 14px;
+      }
+
+      .hero,
+      .content {
+        padding: 26px 20px;
+      }
+
+      .manga {
+        padding: 18px 12px 4px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <main class="page">
+    <article class="card">
+      <section class="hero">
+        <p class="eyebrow">退職の連絡方法ガイド</p>
+        <h1>退職届を出した後に、会社から電話が来たら？</h1>
+        <p class="lead">
+          退職届を郵送した後に会社から電話が来ると、焦ってしまう人もいます。
+          ただ、電話に出たからといって、その場で退職を撤回したり、面談を約束したりする必要はありません。
+        </p>
+      </section>
+
+      <section class="manga" aria-label="退職届を出した後に会社から電話が来た場合の漫画">
+        <img
+          src="taishoku-denwa-ato-manga.png"
+          alt="退職届を出した後に会社から電話が来た場合の対応を説明する4コマ漫画"
+        />
+      </section>
+
+      <section class="content">
+        <h2>電話に出ても、その場で決めなくていい</h2>
+        <p>
+          退職届を出した後に会社から電話が来ること自体は、珍しくありません。
+          退職日の確認、貸与品の返却、書類の送付先など、事務的な確認が必要になることもあります。
+        </p>
+        <p>
+          ただし、電話の流れで「一度会って話そう」「考え直せないか」と言われることもあります。
+          その場合でも、その場で返事を決める必要はありません。
+        </p>
+
+        <div class="point">
+          電話に出たら負け、ではありません。大事なのは、その場で約束しないことです。
+        </div>
+
+        <h2>事務連絡と引き止めを分ける</h2>
+        <p>
+          会社からの電話では、事務連絡と引き止めが混ざることがあります。
+          ここを分けて考えると、対応しやすくなります。
+        </p>
+
+        <ul>
+          <li>退職日の確認</li>
+          <li>貸与品の返却方法</li>
+          <li>離職票・源泉徴収票などの書類</li>
+          <li>私物の扱い</li>
+          <li>会社から送ってほしい書類の送付先</li>
+        </ul>
+
+        <p>
+          こうした手続きに必要な確認は、対応しても問題ありません。
+          一方で、退職を考え直すかどうか、面談に応じるかどうかは別の話です。
+        </p>
+
+        <h2>使いやすい返答例</h2>
+        <p>
+          電話に出た場合は、長く説明しすぎない方が安全です。
+          次のように、短く区切るのが現実的です。
+        </p>
+
+        <div class="point">
+          退職の意思は変わりません。<br />
+          手続きに必要なことは、メールか書面でお願いします。
+        </div>
+
+        <p>
+          この言い方なら、退職の意思と事務連絡を分けられます。
+          感情的な話し合いに引き込まれにくく、後から確認できる形にも残しやすくなります。
+        </p>
+
+        <h2>電話で約束しない方がいいこと</h2>
+        <p>
+          退職時の電話では、焦ってその場で返事をしてしまうことがあります。
+          特に、次のような約束は一度持ち帰った方が無難です。
+        </p>
+
+        <ul>
+          <li>退職日を変更する約束</li>
+          <li>面談に行く約束</li>
+          <li>退職を一度保留する約束</li>
+          <li>有給を使わない約束</li>
+          <li>不自然な口外禁止の約束</li>
+        </ul>
+
+        <p>
+          必要なことは、後で書面やメールで確認すれば十分です。
+          その場で判断しないことが、トラブルを避けるうえで大切です。
+        </p>
+
+        <h2>最初から必要事項をまとめて送ると、電話を減らしやすい</h2>
+        <p>
+          会社が電話してくる理由の多くは、確認事項が残っているからです。
+          退職届だけでなく、退職日、貸与品、必要書類、送付先などをあらかじめまとめて送っておくと、
+          会社側も事務処理を進めやすくなります。
+        </p>
+
+        <p>
+          もちろん、すべての電話を防げるわけではありません。
+          ただ、事務連絡の往復を減らすことはできます。
+        </p>
+
+        <div class="note">
+          ※すでに揉めている場合や、強い圧力・脅し・未払い賃金などの問題がある場合は、
+          弁護士など専門家への相談も検討してください。
+        </div>
+
+        <div class="cta">
+          <p class="cta-title">退職届と必要事項をまとめて送るなら</p>
+          <p class="cta-text">
+            退職届だけでなく、退職時の連絡事項も整理しておくと、会社とのやり取りを減らしやすくなります。
+          </p>
+          <a class="cta-button" href="https://www.taishoku-tool.com/">退職ツールを使う</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>© 退職ツール</p>
+  </footer>
+
+  <script>
+    fetch("header.html")
+      .then((response) => response.text())
+      .then((html) => {
+        document.getElementById("header").innerHTML = html;
+      });
+  </script>
+</body>
+</html>
