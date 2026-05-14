@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>退職手続き①｜会社に預けた原本は返ってきている？</title>
+  <meta name="description" content="退職前に確認したい、会社に預けた原本書類の返却チェック。年金手帳・基礎年金番号通知書、雇用保険被保険者証、前職の源泉徴収票など、退職日までに確認したい書類を解説します。" />
+
+  <style>
+    :root {
+      --bg: #f3f4f6;
+      --paper: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --main: #1e3a8a;
+      --soft: #eff6ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.8;
+    }
+
+    a { color: inherit; }
+
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .brand {
+      font-weight: 800;
+      color: var(--main);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+    }
+
+    .header-nav {
+      display: flex;
+      gap: 14px;
+      font-size: 14px;
+    }
+
+    .header-nav a {
+      color: #374151;
+      text-decoration: none;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 56px;
+    }
+
+    .hero {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 28px 20px;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: var(--soft);
+      color: var(--main);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 14px 0 8px;
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+    }
+
+    .lead {
+      margin: 0;
+      color: #374151;
+      font-size: 16px;
+    }
+
+    .manga-section {
+      margin-top: 24px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 16px;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+    }
+
+    .manga-note {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .manga {
+      display: block;
+      width: 100%;
+      max-width: 920px;
+      margin: 0 auto;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .cta {
+      margin-top: 20px;
+      display: grid;
+      gap: 10px;
+      justify-items: center;
+      padding: 20px;
+      border-radius: 18px;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      text-align: center;
+    }
+
+    .cta p {
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: var(--main);
+      color: #fff;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 8px 18px rgba(30, 58, 138, 0.22);
+    }
+
+    .content {
+      margin-top: 24px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: 0 8px 22px rgba(15, 23, 42, 0.05);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+      line-height: 1.35;
+      color: #0f172a;
+      border-left: 6px solid var(--main);
+      padding-left: 12px;
+    }
+
+    p { margin: 0 0 12px; }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 1.4em;
+    }
+
+    li { margin: 6px 0; }
+
+    .checklist {
+      margin-top: 12px;
+      padding: 16px;
+      border-radius: 16px;
+      background: var(--soft);
+      border: 1px solid #bfdbfe;
+    }
+
+    .checklist strong { color: var(--main); }
+
+    .warning {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      color: #78350f;
+      font-size: 15px;
+    }
+
+    .related {
+      display: grid;
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .related a {
+      display: block;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      text-decoration: none;
+      background: #fff;
+    }
+
+    .site-footer {
+      margin-top: 32px;
+      padding: 22px 16px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .header-nav { flex-wrap: wrap; }
+
+      .hero,
+      .card,
+      .manga-section {
+        border-radius: 16px;
+      }
+
+      .page { padding-top: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">退職ツール</a>
+      <nav class="header-nav" aria-label="サイト内メニュー">
+        <a href="/">トップ</a>
+        <a href="/taishoku-yuso.html">退職届を郵送する方法</a>
+        <a href="https://www.taishoku-tool.com/">退職届を作る</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <span class="eyebrow">退職手続き①</span>
+      <h1>会社に預けた原本、退職前に返ってきてる？</h1>
+      <p class="lead">
+        退職時は、会社から受け取る書類ばかりに意識が向きがちです。
+        でも、入社時や年末調整時に会社へ預けた原本書類が、
+        退職時点で会社に残っていることもあります。
+      </p>
+    </section>
+
+    <section class="manga-section" aria-label="退職手続き漫画">
+      <p class="manga-note">漫画は右上から左下へ読む想定です。</p>
+      <img
+        class="manga"
+        src="./images/taishoku-tetsuzuki-01.png"
+        alt="退職手続き① 会社に預けた原本が返ってきているか確認する漫画"
+      />
+
+      <div class="cta">
+        <p>退職届を先に作っておくと、手続きの整理がしやすくなります。</p>
+        <a class="button" href="https://www.taishoku-tool.com/">退職届を作る</a>
+      </div>
+    </section>
+
+    <section class="content">
+      <article class="card">
+        <h2>退職前に確認したい「預けた原本」</h2>
+        <p>
+          会社に提出した書類の中には、コピーではなく原本を預けているものが混ざっている場合があります。
+          ただし、書類によっては本来その会社で手続きに使う予定だったものもあります。
+          「返して当然」と考えるのではなく、まずは自分で控えや記憶を確認しておきましょう。
+        </p>
+
+        <div class="checklist">
+          <strong>確認したい原本の例</strong>
+          <ul>
+            <li>年金手帳、または基礎年金番号通知書</li>
+            <li>雇用保険被保険者証</li>
+            <li>前職の源泉徴収票</li>
+            <li>その他、会社に預けた原本書類</li>
+          </ul>
+        </div>
+
+        <p class="warning">
+          前職の源泉徴収票は、本来であれば今の会社で年末調整に使われる予定だった書類です。
+          退職によって使い道が変わるため、手元に戻す必要があるか確認しておきましょう。
+          会社側に返却の手間が発生する点も踏まえ、事務的に確認するのが無難です。
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>まずは自分で確認する</h2>
+        <p>
+          会社に何を預けたかは、まず自分で確認しましょう。
+          総務や人事も多くの手続きを抱えているため、すべてを覚えているとは限りません。
+        </p>
+
+        <div class="checklist">
+          <p>
+            入社時、社会保険の手続き時、年末調整時などに、
+            原本を会社へ預けた書類がなかったか確認します。<br />
+            年金手帳・基礎年金番号通知書、雇用保険被保険者証、前職の源泉徴収票など、
+            手元に戻っていない原本があれば、退職日までに確認しておきましょう。
+          </p>
+        </div>
+
+        <p>
+          ただし、経験の浅い担当者が処理している場合もあります。
+          「会社が分かっているはず」と決めつけず、こちらでも確認しておく方が安全です。
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>総務に聞くときは、事務的に確認する</h2>
+        <p>
+          確認するときは、強い言い方にする必要はありません。
+          自分で確認したうえで、返却対象になりそうな原本があるかを事務的に聞けば十分です。
+        </p>
+
+        <div class="checklist">
+          <p>
+            退職にあたり、会社へ預けている原本書類が残っていないか確認したいです。<br />
+            年金手帳・基礎年金番号通知書、雇用保険被保険者証、前職の源泉徴収票など、
+            返却対象の原本があれば、退職日までに確認させてください。
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>コピー類とは分けて考える</h2>
+        <p>
+          このページで確認したいのは、会社が保管するコピーではなく「返してもらうべき原本」です。
+          本人確認書類のコピーや、マイナンバー関係の控えなどは、会社側で保管されることがあります。
+        </p>
+        <p>
+          原本なのか、会社保管用のコピーなのかを分けて考えると、不要な行き違いを避けやすくなります。
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>関連記事</h2>
+        <ul class="related">
+          <li><a href="/taishoku-yuso.html">退職届を郵送する方法</a></li>
+          <li><a href="/taishoku-denwa-muri.html">退職の電話が無理なときの考え方</a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>退職ツール｜退職時の書類作成と郵送準備をサポート</p>
+  </footer>
+</body>
+</html>
