@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>退職時にもらう書類｜離職票・源泉徴収票・健康保険資格喪失証明書など</title>
+
+  <meta
+    name="description"
+    content="退職時にもらう書類を整理。雇用保険被保険者証、健康保険資格喪失証明書、最終月の給与明細、源泉徴収票、離職票など、退職前後に確認したい書類をわかりやすく解説します。"
+  />
+
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f3f4f6;
+      color: #111827;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.8;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 28px 16px 56px;
+    }
+
+    .hero {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(26px, 4vw, 38px);
+      line-height: 1.35;
+      letter-spacing: 0.02em;
+    }
+
+    .lead {
+      margin: 0;
+      color: #4b5563;
+      font-size: 16px;
+    }
+
+    .manga {
+      margin-top: 22px;
+      text-align: center;
+    }
+
+    .manga img {
+      width: 100%;
+      max-width: 860px;
+      height: auto;
+      border-radius: 14px;
+      border: 1px solid #e5e7eb;
+      background: #fff;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+    }
+
+    .note {
+      margin-top: 12px;
+      color: #6b7280;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    section {
+      margin-top: 28px;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 22px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+      line-height: 1.45;
+      border-left: 5px solid #2563eb;
+      padding-left: 10px;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 1.3em;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .check-list li {
+      margin: 0;
+      padding: 12px 14px;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      background: #f9fafb;
+    }
+
+    .check-list strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #111827;
+    }
+
+    .caution {
+      background: #fff7ed;
+      border-color: #fed7aa;
+    }
+
+    .cta {
+      text-align: center;
+      background: #111827;
+      color: #fff;
+      border-color: #111827;
+    }
+
+    .cta h2 {
+      border-left: none;
+      padding-left: 0;
+    }
+
+    .cta p {
+      color: #e5e7eb;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: #fff;
+      color: #111827;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .related a {
+      color: #2563eb;
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 34px;
+      color: #6b7280;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .hero,
+      section {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <article>
+      <div class="hero">
+        <span class="eyebrow">退職手続き確認②</span>
+        <h1>退職時にもらう書類を確認しよう</h1>
+        <p class="lead">
+          退職するときは、退職届を出して終わりではありません。
+          退職後の転職、健康保険、失業給付、税金の手続きで使う書類があります。
+          もらい忘れを防ぐため、退職前後に確認しておきましょう。
+        </p>
+
+        <div class="manga">
+          <img
+            src="taishoku-tetsuzuki-02.png"
+            alt="退職時にもらう書類を確認する4コマ漫画。雇用保険被保険者証、健康保険資格喪失証明書、給与明細、源泉徴収票、離職票を整理している。"
+          />
+        </div>
+
+        <p class="note">
+          ※会社や雇用形態によって、発行時期や受け取る書類は異なります。必要に応じて勤務先へ確認してください。
+        </p>
+      </div>
+
+      <section>
+        <h2>退職時にもらう書類の例</h2>
+        <p>
+          退職時に確認したい主な書類は、次のようなものです。
+          特に、退職後すぐに手続きが必要になる人は、早めに確認しておくと安心です。
+        </p>
+
+        <ul class="check-list">
+          <li>
+            <strong>雇用保険被保険者証</strong>
+            雇用保険に加入していたことを示す書類です。
+            入社直後に発行され、すでに本人が受け取っている場合もあります。
+          </li>
+          <li>
+            <strong>健康保険資格喪失証明書</strong>
+            会社の健康保険を外れたことを示す書類です。
+            国民健康保険への切り替えなどで必要になることがあります。
+          </li>
+          <li>
+            <strong>最終月の給与明細</strong>
+            最後の給与、控除、支給内容を確認するための書類です。
+            退職月の給与計算を確認する材料になります。
+          </li>
+          <li>
+            <strong>源泉徴収票</strong>
+            その年の給与や所得税額を確認するための書類です。
+            転職先での年末調整や、確定申告で必要になることがあります。
+          </li>
+          <li>
+            <strong>離職票</strong>
+            失業給付の手続きで必要になることがあります。
+            退職後すぐに届かない場合もあるため、必要な人は会社へ確認しましょう。
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>雇用保険被保険者証は、すでに持っている場合もある</h2>
+        <p>
+          雇用保険被保険者証は、退職時に初めて受け取るとは限りません。
+          入社後に発行され、会社から本人へ渡されている場合もあります。
+        </p>
+        <p>
+          手元にない場合でも、会社が保管していることがあります。
+          見当たらないときは、退職前後に確認しておくとよいでしょう。
+        </p>
+      </section>
+
+      <section>
+        <h2>離職票は、必要な人ほど確認しておきたい</h2>
+        <p>
+          離職票は、失業給付の手続きで使うことがあります。
+          退職後すぐに別の会社へ転職する場合は使わないこともありますが、
+          失業給付を受ける可能性がある人は重要です。
+        </p>
+        <p>
+          離職票は退職日当日に必ず受け取れるとは限りません。
+          退職後に会社から送られてくる流れになることもあります。
+        </p>
+      </section>
+
+      <section class="caution">
+        <h2>会社によって発行時期は違う</h2>
+        <p>
+          ここで紹介した書類は、すべて同じタイミングで受け取れるとは限りません。
+          退職日当日にもらえるもの、後日郵送されるもの、すでに受け取っているものがあります。
+        </p>
+        <p>
+          退職時のやり取りを減らしたい場合でも、必要書類については確認しておく方が安全です。
+        </p>
+      </section>
+
+      <section>
+        <h2>退職前後に確認しておきたいこと</h2>
+        <ul>
+          <li>どの書類を会社から受け取る予定か</li>
+          <li>いつ頃発行・郵送されるか</li>
+          <li>会社に返却するものはないか</li>
+          <li>退職後の連絡先を会社に伝えているか</li>
+          <li>転職先や役所の手続きで必要な書類は何か</li>
+        </ul>
+      </section>
+
+      <section class="cta">
+        <h2>退職届を作成するなら</h2>
+        <p>
+          退職の意思表示を文書で整理したい場合は、退職ツールで退職届を作成できます。
+          郵送で進めたい人向けの案内も用意しています。
+        </p>
+        <a class="button" href="https://www.taishoku-tool.com/">退職ツールを開く</a>
+      </section>
+
+      <section class="related">
+        <h2>関連ページ</h2>
+        <ul>
+          <li><a href="taishoku-yuso.html">退職届を郵送する方法</a></li>
+          <li><a href="taishoku-denwa-muri.html">退職の電話が無理なとき</a></li>
+          <li><a href="taishoku-jiki.html">退職時期の考え方</a></li>
+          <li><a href="taishoku-mushi.html">退職届を無視されたとき</a></li>
+          <li><a href="taishoku-tetsuzuki-01.html">会社に預けた原本、退職前に返ってきてる？</a></li>
+        </ul>
+      </section>
+    </article>
+
+    <footer>
+      <p>このページは一般的な情報整理です。個別の事情がある場合は、勤務先や関係機関へ確認してください。</p>
+    </footer>
+  </main>
+
+  <script>
+    fetch("header.html")
+      .then((response) => {
+        if (!response.ok) throw new Error("header.html の読み込みに失敗しました");
+        return response.text();
+      })
+      .then((html) => {
+        document.getElementById("site-header").innerHTML = html;
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  </script>
+</body>
+</html>
