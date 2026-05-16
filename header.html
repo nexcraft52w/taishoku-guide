@@ -1,3 +1,79 @@
+<style>
+  .site-header {
+    background: #fff;
+    border-bottom: 1px solid #d1d5db;
+  }
+
+  .site-banner {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  .site-banner a {
+    display: block;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .site-banner img {
+    display: block;
+    width: 100%;
+    height: clamp(120px, 22vw, 240px);
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .global-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .global-nav a {
+    display: block;
+    padding: 10px 12px;
+    color: #111827;
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: none;
+    border-right: 1px solid #e5e7eb;
+    white-space: nowrap;
+  }
+
+  .global-nav a:first-child {
+    border-left: 1px solid #e5e7eb;
+  }
+
+  .global-nav a:hover {
+    background: #f3f4f6;
+  }
+
+  @media (max-width: 640px) {
+    .site-banner img {
+      height: 120px;
+      object-position: center;
+    }
+
+    .global-nav {
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .global-nav a {
+      padding: 10px 11px;
+      font-size: 13px;
+    }
+  }
+</style>
+
 <header class="site-header">
   <div class="site-banner">
     <a href="index.html" aria-label="退職ばあ様 トップページへ">
