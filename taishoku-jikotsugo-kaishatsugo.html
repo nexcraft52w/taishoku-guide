@@ -139,7 +139,14 @@
   </style>
 </head>
 <body>
-  <!-- 共通ヘッダーは別ファイルで読み込み -->
+  <div id="site-header"></div>
+  <script>
+    fetch("header.html")
+      .then((res) => res.text())
+      .then((html) => {
+        document.getElementById("site-header").innerHTML = html;
+      });
+  </script>
 <main class="page">
     <nav class="breadcrumbs" aria-label="パンくずリスト">
       <a href="index.html">ホーム</a> &gt; <span>自己都合退職と会社都合退職の違い</span>
