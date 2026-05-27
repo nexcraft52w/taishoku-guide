@@ -139,108 +139,8 @@
   </style>
 </head>
 <body>
-<style>
-  .site-header {
-    background: #fff;
-    border-bottom: 1px solid #d1d5db;
-  }
-
-  .site-banner {
-    width: 100%;
-    background: #fff;
-    overflow: hidden;
-  }
-
-  .site-banner a {
-    display: block;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  .site-banner img {
-    display: block;
-    width: 100%;
-    height: clamp(120px, 22vw, 240px);
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .global-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0;
-    max-width: 1100px;
-    margin: 0 auto;
-    background: #fff;
-    border-top: 1px solid #e5e7eb;
-  }
-
-  .global-nav a {
-    display: block;
-    padding: 10px 12px;
-    color: #111827;
-    font-size: 14px;
-    line-height: 1;
-    text-decoration: none;
-    border-right: 1px solid #e5e7eb;
-    white-space: nowrap;
-  }
-
-  .global-nav a:first-child {
-    border-left: 1px solid #e5e7eb;
-  }
-
-  .global-nav a:hover {
-    background: #f3f4f6;
-  }
-
-  @media (max-width: 640px) {
-    .site-banner img {
-      height: 120px;
-      object-position: center;
-    }
-
-    .global-nav {
-      justify-content: flex-start;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .global-nav a {
-      padding: 10px 11px;
-      font-size: 13px;
-    }
-  }
-</style>
-
-<header class="site-header">
-  <div class="site-banner">
-    <a href="index.html" aria-label="退職ばあ様 トップページへ">
-      <img
-        src="header-banner.png"
-        alt="退職ばあ様｜退職は意思表示から"
-      />
-    </a>
-  </div>
-
-  <nav class="global-nav" aria-label="ページナビゲーション">
-    <a href="index.html">トップ</a>
-    <a href="taishoku-yuso.html">郵送で退職</a>
-    <a href="taishoku-jiki.html">退職時期</a>
-    <a href="taishoku-date-hokenryo.html">退職日と保険料</a>
-    <a href="taishoku-juuminzei.html">住民税</a>
-    <a href="taishoku-denwa-muri.html">電話が無理</a>
-    <a href="taishoku-denwa-ato.html">電話後</a>
-    <a href="taishoku-mushi.html">退職届を無視</a>
-    <a href="taishoku-tetsuzuki-01.html">退職手続き①</a>
-    <a href="taishoku-tetsuzuki-02.html">退職手続き②</a>
-    <a href="https://www.taishoku-tool.com/">退職ツール</a>
-  </nav>
-</header>
-
-  <main class="page">
+  <!-- 共通ヘッダーは別ファイルで読み込み -->
+<main class="page">
     <nav class="breadcrumbs" aria-label="パンくずリスト">
       <a href="index.html">ホーム</a> &gt; <span>自己都合退職と会社都合退職の違い</span>
     </nav>
@@ -255,7 +155,7 @@
 
       <figure class="manga">
         <img
-          src="taishoku-jikotsugo-kaishatsugo-4koma.png"
+          src="taishoku-jikotsugo-kaishatsugo-manga.png"
           alt="自己都合退職と会社都合退職の違いを説明する4コマ漫画"
         />
       </figure>
