@@ -2,6 +2,8 @@
   .site-header {
     background: #fff;
     border-bottom: 1px solid #d1d5db;
+    position: relative;
+    z-index: 50;
   }
 
   .site-banner {
@@ -35,23 +37,66 @@
     border-top: 1px solid #e5e7eb;
   }
 
-  .global-nav a {
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-link {
     display: block;
-    padding: 10px 12px;
+    padding: 10px 14px;
     color: #111827;
     font-size: 14px;
     line-height: 1;
     text-decoration: none;
     border-right: 1px solid #e5e7eb;
     white-space: nowrap;
+    background: #fff;
   }
 
-  .global-nav a:first-child {
+  .nav-item:first-child .nav-link {
     border-left: 1px solid #e5e7eb;
   }
 
-  .global-nav a:hover {
+  .nav-link:hover,
+  .nav-item:focus-within .nav-link,
+  .nav-item:hover .nav-link {
+    background: #fef08a;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 220px;
+    background: #fff;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  .dropdown a {
+    display: block;
+    padding: 11px 14px;
+    color: #111827;
+    font-size: 14px;
+    line-height: 1.4;
+    text-decoration: none;
+    white-space: nowrap;
+    border-bottom: 1px solid #e5e7eb;
+    background: #fff;
+  }
+
+  .dropdown a:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown a:hover {
     background: #f3f4f6;
+  }
+
+  .nav-item:hover .dropdown,
+  .nav-item:focus-within .dropdown {
+    display: block;
   }
 
   @media (max-width: 640px) {
@@ -67,9 +112,19 @@
       -webkit-overflow-scrolling: touch;
     }
 
-    .global-nav a {
+    .nav-link {
       padding: 10px 11px;
       font-size: 13px;
+    }
+
+    .dropdown {
+      position: absolute;
+      min-width: 210px;
+    }
+
+    .dropdown a {
+      font-size: 13px;
+      padding: 10px 12px;
     }
   }
 </style>
@@ -85,16 +140,40 @@
   </div>
 
   <nav class="global-nav" aria-label="ページナビゲーション">
-    <a href="index.html">トップ</a>
-    <a href="taishoku-yuso.html">郵送で退職</a>
-    <a href="taishoku-jiki.html">退職時期</a>
-    <a href="taishoku-date-hokenryo.html">退職日と保険料</a>
-    <a href="taishoku-juuminzei.html">住民税</a>
-    <a href="taishoku-denwa-muri.html">電話が無理</a>
-    <a href="taishoku-denwa-ato.html">電話後</a>
-    <a href="taishoku-mushi.html">退職届を無視</a>
-    <a href="taishoku-tetsuzuki-01.html">退職手続き①</a>
-    <a href="taishoku-tetsuzuki-02.html">退職手続き②</a>
-    <a href="https://www.taishoku-tool.com/">退職ツール</a>
+    <div class="nav-item">
+      <a class="nav-link" href="index.html">トップ</a>
+    </div>
+
+    <div class="nav-item">
+      <a class="nav-link" href="taishoku-yuso.html">意思表示方法</a>
+      <div class="dropdown">
+        <a href="taishoku-yuso.html">郵送で退職</a>
+        <a href="taishoku-jiki.html">退職時期</a>
+        <a href="taishoku-mushi.html">退職届を無視</a>
+        <a href="taishoku-denwa-muri.html">電話が無理</a>
+        <a href="taishoku-denwa-ato.html">郵送後電話かかってきたら</a>
+      </div>
+    </div>
+
+    <div class="nav-item">
+      <a class="nav-link" href="taishoku-tetsuzuki-01.html">手続き方法</a>
+      <div class="dropdown">
+        <a href="taishoku-tetsuzuki-01.html">退職手続き①</a>
+        <a href="taishoku-tetsuzuki-02.html">退職手続き②</a>
+      </div>
+    </div>
+
+    <div class="nav-item">
+      <a class="nav-link" href="taishoku-date-hokenryo.html">気を付けること</a>
+      <div class="dropdown">
+        <a href="taishoku-date-hokenryo.html">退職日と保険料</a>
+        <a href="taishoku-juuminzei.html">住民税</a>
+        <a href="taishoku-jikotsugo-kaishatsugo.html">自己都合か会社都合か</a>
+      </div>
+    </div>
+
+    <div class="nav-item">
+      <a class="nav-link" href="https://www.taishoku-tool.com/">退職ツール</a>
+    </div>
   </nav>
 </header>
