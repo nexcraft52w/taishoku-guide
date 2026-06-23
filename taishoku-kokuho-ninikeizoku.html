@@ -1,142 +1,446 @@
-export default function KokuhoNinikeizokuArticle() {
-  return (
-    <main className="bg-[#f8fbff] text-slate-800">
-      <article className="mx-auto max-w-4xl px-4 py-10 md:py-14">
-        <div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-100 md:p-10">
-          <p className="mb-3 text-sm font-semibold text-blue-700">
-            退職後の健康保険
-          </p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>退職後の健康保険は国民健康保険と任意継続のどちらが安い？</title>
+  <meta
+    name="description"
+    content="退職後の健康保険で、国民健康保険と任意継続のどちらを選ぶべきかを整理します。給与明細、市区町村での試算、協会けんぽ等での確認、再就職時の脱退手続きまで解説します。"
+  />
+  <link rel="canonical" href="https://guide.taishoku-tool.com/taishoku-kokuho-ninikeizoku.html" />
+  <link rel="icon" type="image/png" href="favicon-guide-blue.png" />
+  <link rel="apple-touch-icon" href="favicon-guide-blue.png" />
 
-          <h1 className="text-2xl font-bold leading-relaxed text-slate-900 md:text-4xl">
-            退職後の健康保険は国民健康保険と任意継続のどちらが安い？
-          </h1>
+  <meta property="og:title" content="退職後の健康保険は国民健康保険と任意継続のどちらが安い？" />
+  <meta property="og:description" content="退職後の健康保険は、国民健康保険と任意継続の比較が必要です。給与明細、市区町村での試算、協会けんぽ等での確認方法を整理します。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://guide.taishoku-tool.com/taishoku-kokuho-ninikeizoku.html" />
+  <meta property="og:image" content="https://guide.taishoku-tool.com/kokuho-ninikeizoku-hikaku-manga.png" />
 
-          <p className="mt-5 leading-8 text-slate-700">
-            退職後は、会社の健康保険から外れるため、次の健康保険を選ぶ必要があります。
-            主な選択肢は「国民健康保険」と「任意継続」です。
-            どちらが安いかは、退職前の給与、前年所得、住んでいる市区町村、家族構成によって変わります。
-          </p>
+  <style>
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid #d1d5db;
+      position: relative;
+      z-index: 50;
+    }
 
-          <figure className="my-8 overflow-hidden rounded-2xl border border-slate-200 bg-white">
-            <img
-              src="/images/articles/kokuho-ninikeizoku-hikaku-manga.png"
-              alt="退職後の健康保険で国民健康保険と任意継続を比較する4コマ漫画"
-              className="h-auto w-full"
-            />
-            <figcaption className="px-4 py-3 text-sm text-slate-500">
-              退職後の健康保険は、給与明細と市区町村での試算を使って比較します。
-            </figcaption>
-          </figure>
+    .site-banner {
+      width: 100%;
+      background: #fff;
+      overflow: hidden;
+    }
 
-          <section className="mt-10">
-            <h2 className="border-l-4 border-blue-500 pl-3 text-xl font-bold text-slate-900">
-              先に結論
-            </h2>
-            <p className="mt-4 leading-8">
-              ざっくり比較するなら、退職前の給与明細にある健康保険料を確認します。
-              任意継続は、退職前に給与から引かれていた健康保険料の2倍が目安です。
-              ただし、正確な金額は協会けんぽや加入していた健康保険組合で確認してください。
-            </p>
-            <p className="mt-4 leading-8">
-              国民健康保険は、市区町村で試算してもらうのが確実です。
-              前年所得や自治体ごとの保険料率で変わるため、ネット上の情報だけで判断しない方が安全です。
-            </p>
-          </section>
+    .site-banner a {
+      display: block;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
 
-          <section className="mt-10">
-            <h2 className="border-l-4 border-blue-500 pl-3 text-xl font-bold text-slate-900">
-              任意継続とは
-            </h2>
-            <p className="mt-4 leading-8">
-              任意継続とは、退職後も、それまで加入していた会社の健康保険を一定期間続ける制度です。
-              退職前は会社が保険料の一部を負担していましたが、退職後は原則として本人が全額負担します。
-              そのため、給与明細に載っている健康保険料の2倍前後が目安になります。
-            </p>
-            <p className="mt-4 leading-8">
-              ただし、任意継続には加入条件や申出期限があります。
-              退職後にゆっくり考えればよいものではないため、退職前から確認しておく方が安全です。
-            </p>
-          </section>
+    .site-banner img {
+      display: block;
+      width: 100%;
+      height: clamp(120px, 22vw, 240px);
+      object-fit: cover;
+      object-position: center;
+    }
 
-          <section className="mt-10">
-            <h2 className="border-l-4 border-blue-500 pl-3 text-xl font-bold text-slate-900">
-              国民健康保険とは
-            </h2>
-            <p className="mt-4 leading-8">
-              国民健康保険は、自営業者、無職の人、会社の健康保険に入っていない人などが加入する健康保険です。
-              保険料は前年所得や世帯人数、年齢、自治体ごとの計算方法によって変わります。
-            </p>
-            <p className="mt-4 leading-8">
-              退職直後は収入が下がっていても、国保の計算では前年所得が見られることがあります。
-              そのため、退職後すぐの国保が思ったより高くなる場合があります。
-            </p>
-          </section>
+    .global-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0;
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #fff;
+      border-top: 1px solid #e5e7eb;
+    }
 
-          <section className="mt-10 rounded-2xl bg-blue-50 p-5 md:p-6">
-            <h2 className="text-xl font-bold text-slate-900">
-              比較するときの持ち物
-            </h2>
-            <ul className="mt-4 list-disc space-y-2 pl-6 leading-7">
-              <li>退職前の給与明細</li>
-              <li>健康保険料が分かる資料</li>
-              <li>本人確認書類</li>
-              <li>前年所得が分かる書類があれば持参</li>
-            </ul>
-            <p className="mt-4 leading-8">
-              市区町村の窓口で国民健康保険料を試算してもらい、任意継続の見込み額と比べると判断しやすくなります。
-            </p>
-          </section>
+    .nav-item {
+      position: relative;
+    }
 
-          <section className="mt-10">
-            <h2 className="border-l-4 border-blue-500 pl-3 text-xl font-bold text-slate-900">
-              どちらを選ぶべきか
-            </h2>
-            <p className="mt-4 leading-8">
-              前年所得が高い人、扶養家族がいる人、退職後すぐに収入が下がる人は、任意継続の方が安くなることがあります。
-              一方で、前年所得が低い人、自治体の国保が比較的安い人、軽減制度の対象になる人は、国民健康保険の方が安くなることがあります。
-            </p>
-            <p className="mt-4 leading-8">
-              つまり、どちらが正解とは一律に言えません。
-              退職前の給与明細を見て任意継続の目安を出し、市区町村で国保を試算してもらう流れが現実的です。
-            </p>
-          </section>
+    .nav-link,
+    .mobile-nav a {
+      display: block;
+      padding: 10px 14px;
+      color: #111827;
+      font-size: 14px;
+      line-height: 1;
+      text-decoration: none;
+      border-right: 1px solid #e5e7eb;
+      white-space: nowrap;
+      background: #fff;
+    }
 
-          <section className="mt-10">
-            <h2 className="border-l-4 border-blue-500 pl-3 text-xl font-bold text-slate-900">
-              注意点
-            </h2>
-            <p className="mt-4 leading-8">
-              任意継続は、申出期限を過ぎると加入できない場合があります。
-              また、健康保険組合によって保険料や手続きが異なることがあります。
-              正確な金額や手続きは、協会けんぽや加入していた健康保険組合で確認してください。
-            </p>
-            <p className="mt-4 leading-8">
-              国民健康保険は自治体ごとに計算方法が異なります。
-              引っ越しを予定している場合は、現在の住所地だけでなく、転居先の市区町村でも確認した方がよいです。
-            </p>
-            <p className="mt-4 leading-8">
-              また、加入手続きだけでなく、就職して会社の健康保険に入ったときは脱退手続きも必要です。
-              国民健康保険は市区町村で脱退の届出を行い、任意継続の場合も協会けんぽや加入していた健康保険組合で資格喪失の手続きを確認してください。
-              手続きせずに放置すると、保険料の二重請求や医療費の精算が必要になる場合があります。
-            </p>
-          </section>
+    .nav-item:first-child .nav-link,
+    .mobile-nav a:first-child {
+      border-left: 1px solid #e5e7eb;
+    }
 
-          <section className="mt-10 rounded-2xl bg-slate-50 p-5 md:p-6">
-            <h2 className="text-xl font-bold text-slate-900">
-              まとめ
-            </h2>
-            <p className="mt-4 leading-8">
-              退職後の健康保険は、国民健康保険と任意継続を比較して決める必要があります。
-              任意継続は退職前の給与明細にある健康保険料の2倍を目安にし、正確な金額は協会けんぽなどで確認します。
-              国民健康保険は、市区町村で試算してもらうのが確実です。
-              なお、就職して会社の健康保険に入った場合は、国保や任意継続の脱退手続きも忘れないようにしましょう。
-            </p>
-            <p className="mt-4 font-bold leading-8 text-slate-900">
-              迷ったら、給与明細を持って市区町村の窓口へ行き、その場で比較するのが一番分かりやすいです。
-            </p>
-          </section>
+    .nav-link:hover,
+    .nav-item:focus-within .nav-link,
+    .nav-item:hover .nav-link,
+    .mobile-nav a:hover {
+      background: #fef08a;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      min-width: 220px;
+      background: #fff;
+      border: 1px solid #d1d5db;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 11px 14px;
+      color: #111827;
+      font-size: 14px;
+      line-height: 1.4;
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 1px solid #e5e7eb;
+      background: #fff;
+    }
+
+    .dropdown a:last-child {
+      border-bottom: none;
+    }
+
+    .dropdown a:hover {
+      background: #f3f4f6;
+    }
+
+    .nav-item:hover .dropdown,
+    .nav-item:focus-within .dropdown {
+      display: block;
+    }
+
+    .mobile-nav {
+      display: none;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      color: #222;
+      background: #f9fafb;
+      line-height: 1.8;
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+      background: #fff;
+    }
+
+    .breadcrumb {
+      color: #6b7280;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(26px, 4vw, 36px);
+      line-height: 1.35;
+      margin: 0 0 18px;
+      color: #111827;
+    }
+
+    h2 {
+      font-size: clamp(22px, 3vw, 28px);
+      margin: 42px 0 14px;
+      padding-left: 12px;
+      border-left: 6px solid #2563eb;
+      color: #111827;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin: 28px 0 10px;
+      color: #111827;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    ul {
+      padding-left: 1.4em;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .lead {
+      font-size: 17px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .main-manga {
+      display: block;
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      margin: 24px auto 10px;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .caption {
+      text-align: center;
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 28px;
+    }
+
+    .box {
+      background: #fefce8;
+      border: 1px solid #fde68a;
+      border-radius: 12px;
+      padding: 16px;
+      margin: 20px 0;
+    }
+
+    .note {
+      background: #f3f4f6;
+      border-radius: 12px;
+      padding: 16px;
+      margin: 20px 0;
+    }
+
+    .summary {
+      background: #ecfdf5;
+      border: 1px solid #bbf7d0;
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 32px;
+    }
+
+    .related-links a {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .site-banner img {
+        height: 120px;
+        object-position: center;
+      }
+
+      .global-nav {
+        display: none;
+      }
+
+      .mobile-nav {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        max-width: 100%;
+        margin: 0 auto;
+        background: #fff;
+        border-top: 1px solid #e5e7eb;
+      }
+
+      .mobile-nav a {
+        padding: 10px 11px;
+        font-size: 13px;
+      }
+
+      main {
+        padding: 22px 14px 44px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-banner">
+      <a href="index.html" aria-label="退職ばあ様 トップページへ">
+        <img
+          src="header-banner.png"
+          alt="退職ばあ様｜退職は意思表示から"
+        />
+      </a>
+    </div>
+
+    <nav class="global-nav" aria-label="ページナビゲーション">
+      <div class="nav-item">
+        <a class="nav-link" href="index.html">トップ</a>
+      </div>
+
+      <div class="nav-item">
+        <a class="nav-link" href="taishoku-yuso.html">意思表示方法</a>
+        <div class="dropdown">
+          <a href="taishoku-yuso.html">郵送で退職</a>
+          <a href="taishoku-jiki.html">退職時期</a>
+          <a href="taishoku-mushi.html">退職届を無視</a>
+          <a href="taishoku-denwa-muri.html">電話が無理</a>
+          <a href="taishoku-denwa-ato.html">電話後</a>
         </div>
-      </article>
-    </main>
-  );
-}
+      </div>
+
+      <div class="nav-item">
+        <a class="nav-link" href="taishoku-tetsuzuki-01.html">手続き方法</a>
+        <div class="dropdown">
+          <a href="taishoku-tetsuzuki-01.html">退職手続き①</a>
+          <a href="taishoku-tetsuzuki-02.html">退職手続き②</a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a class="nav-link" href="taishoku-date-hokenryo.html">気を付けること</a>
+        <div class="dropdown">
+          <a href="taishoku-date-hokenryo.html">退職日と保険料</a>
+          <a href="taishoku-kokuho-ninikeizoku.html">国保と任意継続</a>
+          <a href="taishoku-juuminzei.html">住民税</a>
+          <a href="taishoku-jikotsugo-kaishatsugo.html">自己都合か会社都合か</a>
+          <a href="taishoku-kaikoyokoku-teate.html">解雇予告手当</a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a class="nav-link" href="https://www.taishoku-tool.com/">退職ツール</a>
+      </div>
+    </nav>
+
+    <nav class="mobile-nav" aria-label="スマホ用ページナビゲーション">
+      <a href="index.html">トップ</a>
+      <a href="taishoku-yuso.html">郵送で退職</a>
+      <a href="taishoku-jiki.html">退職時期</a>
+      <a href="taishoku-mushi.html">退職届を無視</a>
+      <a href="taishoku-denwa-muri.html">電話が無理</a>
+      <a href="taishoku-denwa-ato.html">電話後</a>
+      <a href="taishoku-tetsuzuki-01.html">退職手続き①</a>
+      <a href="taishoku-tetsuzuki-02.html">退職手続き②</a>
+      <a href="taishoku-date-hokenryo.html">退職日と保険料</a>
+      <a href="taishoku-kokuho-ninikeizoku.html">国保と任意継続</a>
+      <a href="taishoku-juuminzei.html">住民税</a>
+      <a href="taishoku-jikotsugo-kaishatsugo.html">自己都合か会社都合か</a>
+      <a href="taishoku-kaikoyokoku-teate.html">解雇予告手当</a>
+      <a href="https://www.taishoku-tool.com/">退職ツール</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="breadcrumb">トップ &gt; 気を付けること &gt; 国保と任意継続</div>
+
+    <article>
+      <h1>退職後の健康保険は国民健康保険と任意継続のどちらが安い？</h1>
+
+      <p class="lead">
+        退職後は、会社の健康保険から外れるため、次の健康保険を選ぶ必要があります。主な選択肢は「国民健康保険」と「任意継続」です。どちらが安いかは、退職前の給与、前年所得、住んでいる市区町村、家族構成によって変わります。
+      </p>
+
+      <img
+        src="kokuho-ninikeizoku-hikaku-manga.png"
+        alt="退職後の健康保険で国民健康保険と任意継続を比較する4コマ漫画"
+        class="main-manga"
+      />
+      <p class="caption">退職後の健康保険は、給与明細と市区町村での試算を使って比較します。</p>
+
+      <h2>先に結論</h2>
+      <p>
+        ざっくり比較するなら、まず退職前の給与明細にある健康保険料を確認します。任意継続は、退職前に給与から引かれていた健康保険料の2倍前後が目安です。ただし、正確な金額は協会けんぽや加入していた健康保険組合で確認してください。
+      </p>
+      <p>
+        国民健康保険は、市区町村で試算してもらうのが確実です。前年所得や自治体ごとの保険料率で変わるため、ネット上の情報だけで判断しない方が安全です。
+      </p>
+
+      <div class="box">
+        <strong>比較の流れ</strong>
+        <ul>
+          <li>退職前の給与明細で、健康保険料を確認する</li>
+          <li>任意継続の目安を出す</li>
+          <li>市区町村で国民健康保険料を試算してもらう</li>
+          <li>正確な任意継続額は、協会けんぽや健康保険組合で確認する</li>
+          <li>その場で比較する</li>
+        </ul>
+      </div>
+
+      <h2>任意継続とは</h2>
+      <p>
+        任意継続とは、退職後もそれまで加入していた会社の健康保険を一定期間続ける制度です。退職前は会社が保険料の一部を負担していましたが、退職後は原則として本人が全額負担します。そのため、給与明細に載っている健康保険料の2倍前後が目安になります。
+      </p>
+      <p>
+        ただし、任意継続には加入条件や申出期限があります。退職してからゆっくり考えればよい、という扱いではないため、検討する場合は早めに確認してください。
+      </p>
+
+      <h2>国民健康保険とは</h2>
+      <p>
+        国民健康保険は、市区町村が運営する健康保険です。会社の健康保険を抜けた後、次の勤務先の健康保険に入らない場合などに加入します。
+      </p>
+      <p>
+        国民健康保険料は、前年所得、世帯状況、自治体ごとの計算方法などで変わります。同じ退職でも、人によって保険料が大きく変わることがあります。
+      </p>
+
+      <h2>どちらが安いかは人によって違う</h2>
+      <p>
+        任意継続の方が安い人もいれば、国民健康保険の方が安い人もいます。特に、前年所得が高い場合や扶養家族がいる場合などは、単純に判断しにくくなります。
+      </p>
+      <p>
+        そのため、退職前後の健康保険は「どちらが一般的に安いか」ではなく、「自分の場合はいくらになるか」で確認する必要があります。
+      </p>
+
+      <h2>市区町村で国保を試算してもらう</h2>
+      <p>
+        国民健康保険料は、市区町村の窓口で試算してもらえることがあります。退職前の給与明細や前年所得が分かる資料を持って行くと、比較しやすくなります。
+      </p>
+      <p>
+        退職後に慌てて決めるより、退職前から概算を確認しておく方が安全です。
+      </p>
+
+      <h2>再就職したときは脱退手続きも必要</h2>
+      <p>
+        健康保険は、加入手続きだけでなく、脱退手続きも大切です。就職して会社の健康保険に入ったときは、国民健康保険の脱退届出が必要になります。
+      </p>
+      <p>
+        任意継続の場合も、再就職などで資格喪失の対象になる場合があります。協会けんぽや加入していた健康保険組合で、手続き方法を確認してください。
+      </p>
+      <div class="note">
+        手続きせずに放置すると、保険料の二重請求や医療費の精算が必要になる場合があります。加入した後だけでなく、抜けるときの手続きも確認しておきましょう。
+      </div>
+
+      <h2>退職前後は保険料の見落としに注意</h2>
+      <p>
+        退職後は、健康保険以外にも年金や住民税などの負担が出てきます。会社員の間は給与から天引きされていたため、退職後に金額を見て驚くことがあります。
+      </p>
+      <p>
+        健康保険だけで判断せず、退職後に必要な支払いをまとめて確認しておくと安心です。
+      </p>
+
+      <div class="summary">
+        <h2>まとめ</h2>
+        <ul>
+          <li>任意継続は、退職前の給与明細の健康保険料の2倍前後が目安</li>
+          <li>正確な任意継続額は、協会けんぽや健康保険組合で確認する</li>
+          <li>国民健康保険は、前年所得や自治体によって変わる</li>
+          <li>国保は市区町村で試算してもらうと比較しやすい</li>
+          <li>再就職時は、国保や任意継続の脱退・資格喪失手続きも確認する</li>
+        </ul>
+      </div>
+
+      <h2>関連ページ</h2>
+      <ul class="related-links">
+        <li><a href="taishoku-date-hokenryo.html">退職日と保険料</a></li>
+        <li><a href="taishoku-juuminzei.html">退職後の住民税</a></li>
+        <li><a href="taishoku-tetsuzuki-01.html">退職手続き①</a></li>
+        <li><a href="taishoku-tetsuzuki-02.html">退職手続き②</a></li>
+      </ul>
+    </article>
+  </main>
+</body>
+</html>
