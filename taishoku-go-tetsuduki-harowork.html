@@ -1,3 +1,4 @@
+<link rel="icon" type="image/png" href="/favicon.png">
 <style>
   .article-page {
     background: #f8fafc;
@@ -151,7 +152,7 @@
 
 <div id="site-header"></div>
 <script>
-  fetch("header.html")
+  fetch("/header.html")
     .then((response) => {
       if (!response.ok) {
         throw new Error("ヘッダーを読み込めませんでした");
@@ -183,7 +184,7 @@
       </p>
       <figure class="hero-image">
         <img
-          src="shitsugyo-hoken-harowork-4koma-03.png"
+          src="/shitsugyo-hoken-harowork-4koma-03.png"
           alt="退職後の手続き③ ハローワーク 失業保険は早めに手続きの4コマ漫画"
         />
       </figure>
