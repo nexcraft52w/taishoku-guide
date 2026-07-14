@@ -9,8 +9,8 @@
     content="退職後の健康保険で、国民健康保険と任意継続のどちらを選ぶべきかを整理します。給与明細、市区町村での試算、協会けんぽ等での確認、再就職時の脱退手続きまで解説します。"
   />
   <link rel="canonical" href="https://guide.taishoku-tool.com/taishoku-kokuho-ninikeizoku.html" />
-  <link rel="icon" type="image/png" href="favicon-guide-blue.png" />
-  <link rel="apple-touch-icon" href="favicon-guide-blue.png" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
 
   <meta property="og:title" content="退職後の健康保険は国民健康保険と任意継続のどちらが安い？" />
   <meta property="og:description" content="退職後の健康保険は、国民健康保険と任意継続の比較が必要です。給与明細、市区町村での試算、協会けんぽ等での確認方法を整理します。" />
@@ -19,113 +19,6 @@
   <meta property="og:image" content="https://guide.taishoku-tool.com/kokuho-ninikeizoku-hikaku-manga.png" />
 
   <style>
-    .site-header {
-      background: #fff;
-      border-bottom: 1px solid #d1d5db;
-      position: relative;
-      z-index: 50;
-    }
-
-    .site-banner {
-      width: 100%;
-      background: #fff;
-      overflow: hidden;
-    }
-
-    .site-banner a {
-      display: block;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .site-banner img {
-      display: block;
-      width: 100%;
-      height: clamp(120px, 22vw, 240px);
-      object-fit: cover;
-      object-position: center;
-    }
-
-    .global-nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0;
-      max-width: 1100px;
-      margin: 0 auto;
-      background: #fff;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .nav-item {
-      position: relative;
-    }
-
-    .nav-link,
-    .mobile-nav a {
-      display: block;
-      padding: 10px 14px;
-      color: #111827;
-      font-size: 14px;
-      line-height: 1;
-      text-decoration: none;
-      border-right: 1px solid #e5e7eb;
-      white-space: nowrap;
-      background: #fff;
-    }
-
-    .nav-item:first-child .nav-link,
-    .mobile-nav a:first-child {
-      border-left: 1px solid #e5e7eb;
-    }
-
-    .nav-link:hover,
-    .nav-item:focus-within .nav-link,
-    .nav-item:hover .nav-link,
-    .mobile-nav a:hover {
-      background: #fef08a;
-    }
-
-    .dropdown {
-      display: none;
-      position: absolute;
-      left: 0;
-      top: 100%;
-      min-width: 220px;
-      background: #fff;
-      border: 1px solid #d1d5db;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    }
-
-    .dropdown a {
-      display: block;
-      padding: 11px 14px;
-      color: #111827;
-      font-size: 14px;
-      line-height: 1.4;
-      text-decoration: none;
-      white-space: nowrap;
-      border-bottom: 1px solid #e5e7eb;
-      background: #fff;
-    }
-
-    .dropdown a:last-child {
-      border-bottom: none;
-    }
-
-    .dropdown a:hover {
-      background: #f3f4f6;
-    }
-
-    .nav-item:hover .dropdown,
-    .nav-item:focus-within .dropdown {
-      display: block;
-    }
-
-    .mobile-nav {
-      display: none;
-    }
-
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
@@ -234,32 +127,6 @@
     }
 
     @media (max-width: 640px) {
-      .site-banner img {
-        height: 120px;
-        object-position: center;
-      }
-
-      .global-nav {
-        display: none;
-      }
-
-      .mobile-nav {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        max-width: 100%;
-        margin: 0 auto;
-        background: #fff;
-        border-top: 1px solid #e5e7eb;
-      }
-
-      .mobile-nav a {
-        padding: 10px 11px;
-        font-size: 13px;
-      }
-
       main {
         padding: 22px 14px 44px;
       }
@@ -267,73 +134,22 @@
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="site-banner">
-      <a href="index.html" aria-label="退職ばあ様 トップページへ">
-        <img
-          src="header-banner.png"
-          alt="退職ばあ様｜退職は意思表示から"
-        />
-      </a>
-    </div>
-
-    <nav class="global-nav" aria-label="ページナビゲーション">
-      <div class="nav-item">
-        <a class="nav-link" href="index.html">トップ</a>
-      </div>
-
-      <div class="nav-item">
-        <a class="nav-link" href="taishoku-yuso.html">意思表示方法</a>
-        <div class="dropdown">
-          <a href="taishoku-yuso.html">郵送で退職</a>
-          <a href="taishoku-jiki.html">退職時期</a>
-          <a href="taishoku-mushi.html">退職届を無視</a>
-          <a href="taishoku-denwa-muri.html">電話が無理</a>
-          <a href="taishoku-denwa-ato.html">電話後</a>
-        </div>
-      </div>
-
-      <div class="nav-item">
-        <a class="nav-link" href="taishoku-tetsuzuki-01.html">手続き方法</a>
-        <div class="dropdown">
-          <a href="taishoku-tetsuzuki-01.html">退職手続き①</a>
-          <a href="taishoku-tetsuzuki-02.html">退職手続き②</a>
-        </div>
-      </div>
-
-      <div class="nav-item">
-        <a class="nav-link" href="taishoku-date-hokenryo.html">気を付けること</a>
-        <div class="dropdown">
-          <a href="taishoku-date-hokenryo.html">退職日と保険料</a>
-          <a href="taishoku-kokuho-ninikeizoku.html">国保と任意継続</a>
-          <a href="taishoku-juuminzei.html">住民税</a>
-          <a href="taishoku-jikotsugo-kaishatsugo.html">自己都合か会社都合か</a>
-          <a href="taishoku-kaikoyokoku-teate.html">解雇予告手当</a>
-        </div>
-      </div>
-
-      <div class="nav-item">
-        <a class="nav-link" href="https://www.taishoku-tool.com/">退職ツール</a>
-      </div>
-    </nav>
-
-    <nav class="mobile-nav" aria-label="スマホ用ページナビゲーション">
-      <a href="index.html">トップ</a>
-      <a href="taishoku-yuso.html">郵送で退職</a>
-      <a href="taishoku-jiki.html">退職時期</a>
-      <a href="taishoku-mushi.html">退職届を無視</a>
-      <a href="taishoku-denwa-muri.html">電話が無理</a>
-      <a href="taishoku-denwa-ato.html">電話後</a>
-      <a href="taishoku-tetsuzuki-01.html">退職手続き①</a>
-      <a href="taishoku-tetsuzuki-02.html">退職手続き②</a>
-      <a href="taishoku-date-hokenryo.html">退職日と保険料</a>
-      <a href="taishoku-kokuho-ninikeizoku.html">国保と任意継続</a>
-      <a href="taishoku-juuminzei.html">住民税</a>
-      <a href="taishoku-jikotsugo-kaishatsugo.html">自己都合か会社都合か</a>
-      <a href="taishoku-kaikoyokoku-teate.html">解雇予告手当</a>
-      <a href="https://www.taishoku-tool.com/">退職ツール</a>
-    </nav>
-  </header>
+  <div id="site-header"></div>
+  <script>
+    fetch("/header.html")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("header.htmlの読み込みに失敗しました");
+        }
+        return response.text();
+      })
+      .then((html) => {
+        document.getElementById("site-header").innerHTML = html;
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  </script>
 
   <main>
     <div class="breadcrumb">トップ &gt; 気を付けること &gt; 国保と任意継続</div>
